@@ -1,0 +1,11 @@
+{
+  "name": "casey-exact-head-verifier",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "bash verify.sh"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}

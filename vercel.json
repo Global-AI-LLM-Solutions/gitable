@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "echo 'Verifier harness has no root dependencies'",
+  "buildCommand": "bash verify.sh",
+  "outputDirectory": "out"
+}

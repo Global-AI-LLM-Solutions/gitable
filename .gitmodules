@@ -1,0 +1,4 @@
+[submodule "casey-source"]
+	path = casey-source
+	url = https://github.com/Global-AI-LLM-Solutions/swarm-govern-forge.git
+	branch = feature/recover-casey-live-capabilities-20260830
