@@ -1,13 +1,9 @@
 #EXTM3U
-
-#EXTINF:-1 tvg-name="FashionTV Midnight Secrets" group-title="Adult - Glamour",FashionTV - Midnight Secrets
-https://fash1043.cloudycdn.services/slive/_definst_/ftv_ftv_midnite_k1y_27049_midnite_secr_108_hls.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-name="Miami TV Jenny For You 18+" group-title="Adult - 18+",Miami TV - Jenny For You 18+
-http://59ec5453559f0.streamlock.net:1935/Jennyforyou/smil:WEB/chuklist.m3u8
-
-#EXTINF:-1 tvg-name="VISIT-X TV" group-title="Adult - 18+",VISIT-X TV
-http://stream.visit-x.tv:1935/vxtv/live_720p/playlist.m3u8
-
-#EXTINF:-1 tvg-name="MyCamTV Blonde Girls" group-title="Adult - 18+",MyCamTV - Blonde Girls
-http://live.mycamtv.com/blonde.m3u8
+#EXTINF:-1,FashionTV - Midnight Secrets
+https://fash1043.cloudycdn.services/slive/_definst_/ftv_midnite_secrets_adaptive.smil/playlist.m3u8
+#EXTINF:-1,Miami TV - Jenny For You 18+
+https://59ec5453559f0.streamlock.net/jennyforyou/jennyforyou/playlist.m3u8
+#EXTINF:-1,VISIT-X TV
+https://stream.visit-x.tv/vxtv/ngrp:live_all/playlist.m3u8
+#EXTINF:-1,MyCamTV - Blonde Girls
+https://live.mycamtv.com/blonde.m3u8
