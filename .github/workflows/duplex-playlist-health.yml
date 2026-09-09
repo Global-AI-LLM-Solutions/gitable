@@ -1,0 +1,79 @@
+name: Duplex playlist health and refresh
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'duplex/update_playlist.py'
+      - '.github/workflows/duplex-playlist-health.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: duplex-playlist-health
+  cancel-in-progress: false
+
+jobs:
+  validate-and-refresh:
+    name: Validate every Duplex channel before publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install validator dependency
+        run: python -m pip install --disable-pip-version-check requests
+
+      - name: Validate candidates and build production playlist
+        run: python duplex/update_playlist.py
+
+      - name: Show validation receipt
+        run: |
+          python - <<'PY'
+          import json
+          r=json.load(open('duplex/channel-health-report.json',encoding='utf-8'))
+          print('generated_at_utc=',r['generated_at_utc'])
+          print('candidate_count=',r['candidate_count'])
+          print('active_count=',r['active_count'])
+          print('failed_count=',r['failed_count'])
+          print('ACTIVE CHANNELS:')
+          for x in r['results']:
+              if x['ok']:
+                  print('  PASS',x['name'],x['url'])
+          print('REJECTED CHANNELS:')
+          for x in r['results']:
+              if not x['ok']:
+                  print('  FAIL',x['name'],x['detail'])
+          PY
+
+      - name: Verify production file invariants
+        run: |
+          set -euo pipefail
+          test "$(head -n1 duplex/legal-adult-playlist.m3u)" = '#EXTM3U'
+          ! grep -E '^http://' duplex/legal-adult-playlist.m3u
+          ! grep -E '\.mpd($|\?)' duplex/legal-adult-playlist.m3u
+          test "$(grep -c '^#EXTINF:' duplex/legal-adult-playlist.m3u)" -gt 0
+          test "$(grep -c '^https://' duplex/legal-adult-playlist.m3u)" = "$(grep -c '^#EXTINF:' duplex/legal-adult-playlist.m3u)"
+
+      - name: Commit refreshed playlist and proof report
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- duplex/legal-adult-playlist.m3u duplex/channel-health-report.json; then
+            echo 'No playlist changes required.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add duplex/legal-adult-playlist.m3u duplex/channel-health-report.json
+          git commit -m 'Auto-refresh verified Duplex channels'
+          git push
