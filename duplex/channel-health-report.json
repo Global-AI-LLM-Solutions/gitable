@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-09-10T16:29:07Z",
+  "generated_at_utc": "2026-09-10T20:56:37Z",
   "candidate_count": 110,
-  "active_count": 77,
-  "failed_count": 33,
+  "active_count": 78,
+  "failed_count": 32,
   "policy": "Only HTTPS HLS streams that returned a valid M3U8 manifest and a retrievable media segment during this run are published. DRM-like HLS is rejected.",
   "results": [
     {
@@ -18,7 +18,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/zXy2kbe.png\" group-title=\"Weather\",3Cat Càmeres del temps",
       "url": "https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8",
       "ok": true,
-      "detail": "OK final=https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8 segment=https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/br1/99392/nogeo-br1_298176276.ts",
+      "detail": "OK final=https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8 segment=https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/br1/99393/nogeo-br1_298178951.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -26,7 +26,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/3CatInfo_logo.svg/512px-3CatInfo_logo.svg.png\" group-title=\"News\",3CatInfo",
       "url": "https://directes-tv-int.3catdirectes.cat/live-origin/canal324-hls/master.m3u8",
       "ok": true,
-      "detail": "OK final=https://directes-tv-int.3catdirectes.cat/live-origin/canal324-hls/master.m3u8 segment=https://directes-tv-int.3catdirectes.cat/live-origin/canal324-hls/br1/99392/nogeo-br1_298176275.ts",
+      "detail": "OK final=https://directes-tv-int.3catdirectes.cat/live-origin/canal324-hls/master.m3u8 segment=https://directes-tv-int.3catdirectes.cat/live-origin/canal324-hls/br1/99393/nogeo-br1_298178951.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -34,7 +34,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/BrW7gk8.png\" group-title=\"News\",ABC News Australia",
       "url": "https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8",
       "ok": true,
-      "detail": "OK final=https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8 segment=https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index_5_10520431.ts?m=1725933270",
+      "detail": "OK final=https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8 segment=https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index_5_10523106.ts?m=1725933270",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -50,7 +50,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/M8wbVYK.png\" group-title=\"Weather\",AccuWeather Now",
       "url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://amg00684-accuweather-accuweather-plex-jbd2s.amagi.tv/playlist/amg00684-accuweather-accuweather-plex/playlist.m3u8 segment=https://amg00684-accuweather-accuweather-plex-jbd2s.amagi.tv/240p-cc/seg_0415419.ts",
+      "detail": "OK final=https://amg00684-accuweather-accuweather-plex-jbd2s.amagi.tv/playlist/amg00684-accuweather-accuweather-plex/playlist.m3u8 segment=https://amg00684-accuweather-accuweather-plex-jbd2s.amagi.tv/240p-cc/seg_0418147.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -58,7 +58,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/oZ5xO41.png\" group-title=\"News\",Africanews French",
       "url": "https://cdn-euronews.akamaized.net/live/eds/africanews-fr/25050/index.m3u8",
       "ok": true,
-      "detail": "OK final=https://cdn-euronews.akamaized.net/live/eds/africanews-fr/25050/index.m3u8 segment=https://cdn-euronews.akamaized.net/live/eds/africanews-fr/25050/africanews-fr-avc1_250000=1-mp4a_143200_fra=2-begin=3689871852991112-dur=49600000-seq=61498805.ts",
+      "detail": "OK final=https://cdn-euronews.akamaized.net/live/eds/africanews-fr/25050/index.m3u8 segment=https://cdn-euronews.akamaized.net/live/eds/africanews-fr/25050/africanews-fr-avc1_250000=1-mp4a_143200_fra=2-begin=3690032352991112-dur=60000000-seq=61501493.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -66,7 +66,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/7bRVpnu.png\" group-title=\"News\",Al Jazeera Arabic",
       "url": "https://live-hls-web-aja.getaj.net/AJA/index.m3u8",
       "ok": true,
-      "detail": "OK final=https://live-hls-web-aja.getaj.net/AJA/index.m3u8 segment=https://live-hls-web-aja.getaj.net/AJA/20230209T014501-01-11315138.ts",
+      "detail": "OK final=https://live-hls-web-aja.getaj.net/AJA/index.m3u8 segment=https://live-hls-web-aja.getaj.net/AJA/20230209T014501-01-11316744.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -106,7 +106,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/BP7tY6F.png\" group-title=\"News\",Belarus 24",
       "url": "https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus24.smil/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus24.smil/playlist.m3u8 segment=https://edge52.dc.beltelecom.by/ngtrk/_definst_/smil:belarus24.smil/media_b5160000_sleng_285202.ts",
+      "detail": "OK final=https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus24.smil/playlist.m3u8 segment=https://edge52.dc.beltelecom.by/ngtrk/_definst_/smil:belarus24.smil/media_b5160000_sleng_285737.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -114,7 +114,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/NJsRFud.png\" group-title=\"Sports\",Belarus 5",
       "url": "https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus5.smil/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus5.smil/playlist.m3u8 segment=https://edge54.dc.beltelecom.by/ngtrk/_definst_/smil:belarus5.smil/media_b2660000_sleng_285203.ts",
+      "detail": "OK final=https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus5.smil/playlist.m3u8 segment=https://edge51.dc.beltelecom.by/ngtrk/_definst_/smil:belarus5.smil/media_b2660000_sleng_285737.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -122,7 +122,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/OOB7nrS.png\" group-title=\"Education\",Canal Educação",
       "url": "https://canaleducacao-stream.ebc.com.br/index.m3u8",
       "ok": true,
-      "detail": "OK final=https://canaleducacao-stream.ebc.com.br/index.m3u8 segment=https://canaleducacao-stream.ebc.com.br/EDUCACAO-avc1_900000=10002-begin=3689871907260000-dur=40040000-seq=96090415.ts",
+      "detail": "OK final=https://canaleducacao-stream.ebc.com.br/index.m3u8 segment=https://canaleducacao-stream.ebc.com.br/EDUCACAO-avc1_900000=10002-begin=3690032387580000-dur=40040000-seq=96094594.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -130,7 +130,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/9/97/Savoir_m%C3%A9dia_logo_3.png\" group-title=\"Education\",Canal Savoir",
       "url": "https://hls.savoir.media/live/stream.m3u8",
       "ok": true,
-      "detail": "OK final=https://hls.savoir.media/live/stream.m3u8 segment=https://hls.savoir.media/live/stream-02057383.ts",
+      "detail": "OK final=https://hls.savoir.media/live/stream.m3u8 segment=https://hls.savoir.media/live/stream-02059436.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -146,7 +146,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CGTN.svg/512px-CGTN.svg.png\" group-title=\"News\",CGTN",
       "url": "https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8",
       "ok": true,
-      "detail": "OK final=https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8 segment=https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master480p_13221542.ts",
+      "detail": "OK final=https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8 segment=https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master480p_13224217.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -154,7 +154,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/AkFFrS7.png\" group-title=\"News\",CGTN Arabic",
       "url": "https://dash3.antik.sk/live/test_cgtn_arb_tizen/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://dash3.antik.sk/live/test_cgtn_arb_tizen/playlist.m3u8 segment=https://dash3.antik.sk/live/test_cgtn_arb_tizen/1789057599.ts",
+      "detail": "OK final=https://dash3.antik.sk/live/test_cgtn_arb_tizen/playlist.m3u8 segment=https://dash3.antik.sk/live/test_cgtn_arb_tizen/1789073650.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -162,7 +162,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/BwhledK.png\" group-title=\"News\",CGTN French",
       "url": "https://dash4.antik.sk/live/test_cgtn_fra_tizen/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://dash4.antik.sk/live/test_cgtn_fra_tizen/playlist.m3u8 segment=https://dash4.antik.sk/live/test_cgtn_fra_tizen/1789057601.ts",
+      "detail": "OK final=https://dash4.antik.sk/live/test_cgtn_fra_tizen/playlist.m3u8 segment=https://dash4.antik.sk/live/test_cgtn_fra_tizen/1789073651.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -170,7 +170,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/nDWkCmL.png\" group-title=\"News\",CGTN Russian",
       "url": "https://dash3.antik.sk/live/test_cgtn_rus_tizen/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://dash3.antik.sk/live/test_cgtn_rus_tizen/playlist.m3u8 segment=https://dash3.antik.sk/live/test_cgtn_rus_tizen/1789057597.ts",
+      "detail": "OK final=https://dash3.antik.sk/live/test_cgtn_rus_tizen/playlist.m3u8 segment=https://dash3.antik.sk/live/test_cgtn_rus_tizen/1789073651.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -178,7 +178,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/Poz3xfi.png\" group-title=\"News\",CGTN Spanish",
       "url": "https://dash4.antik.sk/live/test_cgtn_esp_tizen/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://dash4.antik.sk/live/test_cgtn_esp_tizen/playlist.m3u8 segment=https://dash4.antik.sk/live/test_cgtn_esp_tizen/1789057599.ts",
+      "detail": "OK final=https://dash4.antik.sk/live/test_cgtn_esp_tizen/playlist.m3u8 segment=https://dash4.antik.sk/live/test_cgtn_esp_tizen/1789073653.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -186,7 +186,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/M6FFkc3.png\" group-title=\"Education\",Classic Arts Showcase",
       "url": "https://classicarts.akamaized.net/hls/live/1024257/CAS/master.m3u8",
       "ok": true,
-      "detail": "OK final=https://classicarts.akamaized.net/hls/live/1024257/CAS/master.m3u8 segment=https://classicarts.akamaized.net/hls/live/1024257/CAS/master_720p30_14701.ts",
+      "detail": "OK final=https://classicarts.akamaized.net/hls/live/1024257/CAS/master.m3u8 segment=https://classicarts.akamaized.net/hls/live/1024257/CAS/master_720p30_16037.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -194,7 +194,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/l4m0is8.jpeg\" group-title=\"Education\",Cloudflare TV",
       "url": "https://cloudflare.tv/hls/live.m3u8",
       "ok": true,
-      "detail": "OK final=https://cloudflare.tv/hls/live.m3u8 segment=https://cloudflare.tv/hls/0abae0503f3c9eb1d469375935c8748d/video/1080/seg_230353.mp4?p=eyJ0eXBlIjoic2VnbWVudCIsInZpZGVvSUQiOiIwYWJhZTA1MDNmM2M5ZWIxZDQ2OTM3NTkzNWM4NzQ4ZCIsIm93bmVySUQiOjI1OTQ2NDQwLCJjcmVhdG9ySUQiOiIiLCJzZWdtZW50RHVyYXRpb25TZWNzIjoyLCJzdG9yYWdlUHJvdmlkZXIiOjQsImxwcyI6Ijg3M2E3Mjg2NjRhOTUwNTUiLCJyY3UiOjE3ODkwNTc3NzQ0NzUsInRyYWNrIjoiYWIzM2JkZWMzZmQ2NzU3OGRkZGY3YjMzOWVlOTYzY2IiLCJyZW5kaXRpb24iOiIxODc2MTMzMzE5IiwibXV4aW5nIjoiMTkzODE2MTYyNyIsImxpdmVTb3VyY2VJRCI6Ijk2NzBkYjFlYzMwNjAzOWMwYWJjNzllYzVmZWIzZTM2In0&s=w6BNw5PDm1PDiXDDsD4iwoDCjsOweEDDusOVWmLDtyMVwoc3HVZHPHrCmQTCoQ",
+      "detail": "OK final=https://cloudflare.tv/hls/live.m3u8 segment=https://cloudflare.tv/hls/3080b4524d935aa8ef1a01dfe20823d9/video/1080/seg_4622.mp4?p=eyJ0eXBlIjoic2VnbWVudCIsInZpZGVvSUQiOiIzMDgwYjQ1MjRkOTM1YWE4ZWYxYTAxZGZlMjA4MjNkOSIsIm93bmVySUQiOjI1OTQ2NDQwLCJjcmVhdG9ySUQiOiIiLCJzZWdtZW50RHVyYXRpb25TZWNzIjoyLCJzdG9yYWdlUHJvdmlkZXIiOjQsImxwcyI6ImViNWZiYmU1ZTE3ZmFmNTMiLCJyY3UiOjE3ODkwNzM4MjY0NzMsInRyYWNrIjoiOGE2ZmMxZWQ3YzM2ZGIyYzMxYTJkZmE5ZGFhMTVjZDQiLCJyZW5kaXRpb24iOiIxODgzNzM1MjI1IiwibXV4aW5nIjoiMTk0NTg0MTgzNyIsImxpdmVTb3VyY2VJRCI6Ijk2NzBkYjFlYzMwNjAzOWMwYWJjNzllYzVmZWIzZTM2In0&s=PsOBP27ClcOiG8KBN3FXw5YgwrEiXxJuwr4OwoY5wpjDncK9N8K1w5AVXcOdwqo",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -210,7 +210,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/OIJTECP.png\" group-title=\"Education\",Create",
       "url": "https://create.lls.pbs.org/index.m3u8",
       "ok": true,
-      "detail": "OK final=https://create.lls.pbs.org/index.m3u8 segment=https://create.lls.pbs.org/index_1080p_20260910T162530_5160309.ts",
+      "detail": "OK final=https://create.lls.pbs.org/index.m3u8 segment=https://create.lls.pbs.org/index_1080p_20260910T205302_5164318.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -234,7 +234,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20News%20HD.png\" group-title=\"News\",DD News",
       "url": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/0811cd8c37ca4c409d5385a6cd2fa18b/index.m3u8",
       "ok": true,
-      "detail": "OK final=https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/0811cd8c37ca4c409d5385a6cd2fa18b/index.m3u8 segment=https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/0811cd8c37ca4c409d5385a6cd2fa18b/index_1_10591766.ts?m=1723210916",
+      "detail": "OK final=https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/0811cd8c37ca4c409d5385a6cd2fa18b/index.m3u8 segment=https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/0811cd8c37ca4c409d5385a6cd2fa18b/index_1_10594442.ts?m=1723210916",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -242,7 +242,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/nLzdGeX.png\" group-title=\"Education\",DLTV 1",
       "url": "https://cdn-live.dltv.ac.th/dltv01.m3u8",
       "ok": true,
-      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv01.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin01-dltv-01-adaptive.smil/media_w1548660694_b3128000_slth_2834649.ts",
+      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv01.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin01-dltv-01-adaptive.smil/media_w2100803418_b3128000_slth_2836255.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -250,7 +250,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/TgN81Zr.png\" group-title=\"Education\",DLTV 10",
       "url": "https://cdn-live.dltv.ac.th/dltv10.m3u8",
       "ok": true,
-      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv10.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin02-dltv-10-adaptive.smil/media_w1469530297_b3128000_slth_2834650.ts",
+      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv10.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin02-dltv-10-adaptive.smil/media_w659059344_b3128000_slth_2836254.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -258,7 +258,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/hFk2b5s.png\" group-title=\"Education\",DLTV 11",
       "url": "https://cdn-live.dltv.ac.th/dltv11.m3u8",
       "ok": true,
-      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv11.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin03-dltv-11-adaptive.smil/media_w2005604248_b3128000_slth_2834646.ts",
+      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv11.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin03-dltv-11-adaptive.smil/media_w948192524_b3128000_slth_2836251.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -266,7 +266,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/ITt6lY7.png\" group-title=\"Education\",DLTV 12",
       "url": "https://cdn-live.dltv.ac.th/dltv12.m3u8",
       "ok": true,
-      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv12.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin03-dltv-12-adaptive.smil/media_w1351214023_b3128000_slth_2834646.ts",
+      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv12.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin03-dltv-12-adaptive.smil/media_w1704029551_b3128000_slth_2836250.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -274,7 +274,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/asB5w3v.png\" group-title=\"Education\",DLTV 13",
       "url": "https://cdn-live.dltv.ac.th/dltv13.m3u8",
       "ok": true,
-      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv13.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin03-dltv-13-adaptive.smil/media_w367397384_b3128000_slth_2834636.ts",
+      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv13.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin03-dltv-13-adaptive.smil/media_w1498324123_b3128000_slth_2836242.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -282,7 +282,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/HOjZRNS.png\" group-title=\"Education\",DLTV 14",
       "url": "https://cdn-live.dltv.ac.th/dltv14.m3u8",
       "ok": true,
-      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv14.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin03-dltv-14-adaptive.smil/media_w1881805248_b3128000_slth_2834637.ts",
+      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv14.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin03-dltv-14-adaptive.smil/media_w2053453635_b3128000_slth_2836242.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -290,7 +290,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/onJi2b6.png\" group-title=\"Education\",DLTV 15",
       "url": "https://cdn-live.dltv.ac.th/dltv15.m3u8",
       "ok": true,
-      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv15.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin03-dltv-15-adaptive.smil/media_w845284892_b3128000_slth_1749691.ts",
+      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv15.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin03-dltv-15-adaptive.smil/media_w2112973510_b3128000_slth_1751296.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -298,7 +298,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/lDBSTfE.png\" group-title=\"Education\",DLTV 2",
       "url": "https://cdn-live.dltv.ac.th/dltv02.m3u8",
       "ok": true,
-      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv02.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin01-dltv-02-adaptive.smil/media_w23127100_b3128000_slth_2834649.ts",
+      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv02.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin01-dltv-02-adaptive.smil/media_w451987904_b3128000_slth_2836254.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -306,7 +306,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/wmrxerm.png\" group-title=\"Education\",DLTV 3",
       "url": "https://cdn-live.dltv.ac.th/dltv03.m3u8",
       "ok": true,
-      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv03.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin01-dltv-03-adaptive.smil/media_w810494401_b3128000_slth_2834649.ts",
+      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv03.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin01-dltv-03-adaptive.smil/media_w1428129383_b3128000_slth_2836253.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -314,7 +314,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/WkpoQhU.png\" group-title=\"Education\",DLTV 4",
       "url": "https://cdn-live.dltv.ac.th/dltv04.m3u8",
       "ok": true,
-      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv04.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin01-dltv-04-adaptive.smil/media_w1456844488_b3128000_slth_2834648.ts",
+      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv04.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin01-dltv-04-adaptive.smil/media_w1283675160_b3128000_slth_2836253.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -322,7 +322,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/J1E89jX.png\" group-title=\"Education\",DLTV 5",
       "url": "https://cdn-live.dltv.ac.th/dltv05.m3u8",
       "ok": true,
-      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv05.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin01-dltv-05-adaptive.smil/media_w1971546261_b3128000_slth_2834651.ts",
+      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv05.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin01-dltv-05-adaptive.smil/media_w1393178556_b3128000_slth_2836257.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -330,7 +330,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/qeIHWC0.png\" group-title=\"Education\",DLTV 6",
       "url": "https://cdn-live.dltv.ac.th/dltv06.m3u8",
       "ok": true,
-      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv06.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin02-dltv-06-adaptive.smil/media_w871405941_b3128000_slth_2834649.ts",
+      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv06.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin02-dltv-06-adaptive.smil/media_w52308065_b3128000_slth_2836253.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -338,7 +338,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/OjYwMe3.png\" group-title=\"Education\",DLTV 7",
       "url": "https://cdn-live.dltv.ac.th/dltv07.m3u8",
       "ok": true,
-      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv07.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin02-dltv-07-adaptive.smil/media_w1633086346_b3128000_slth_2834650.ts",
+      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv07.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin02-dltv-07-adaptive.smil/media_w1416850363_b3128000_slth_2836254.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -346,7 +346,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/xIwn5Ha.png\" group-title=\"Education\",DLTV 8",
       "url": "https://cdn-live.dltv.ac.th/dltv08.m3u8",
       "ok": true,
-      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv08.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin02-dltv-08-adaptive.smil/media_w455045916_b3128000_slth_2834649.ts",
+      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv08.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin02-dltv-08-adaptive.smil/media_w1626471427_b3128000_slth_2836254.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -354,7 +354,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/yPeSAry.png\" group-title=\"Education\",DLTV 9",
       "url": "https://cdn-live.dltv.ac.th/dltv09.m3u8",
       "ok": true,
-      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv09.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin02-dltv-09-adaptive.smil/media_w1536767160_b3128000_slth_2834651.ts",
+      "detail": "OK final=https://cdn-live.dltv.ac.th/dltv09.m3u8 segment=https://cdn-live.dltv.ac.th/smil:origin02-dltv-09-adaptive.smil/media_w1915514145_b3128000_slth_2836255.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -362,7 +362,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/8MRNFb9.png\" group-title=\"News\",DW Arabic",
       "url": "https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/master.m3u8",
       "ok": true,
-      "detail": "OK final=https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/master.m3u8 segment=https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/stream01/20260831T090630/ts/149087/sequence_298175975.ts",
+      "detail": "OK final=https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/master.m3u8 segment=https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/stream01/20260831T090630/ts/149089/sequence_298178650.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -370,7 +370,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/8MRNFb9.png\" group-title=\"News\",DW English",
       "url": "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8",
       "ok": true,
-      "detail": "OK final=https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8 segment=https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/stream01/20260831T090447/ts/149087/sequence_298175976.ts",
+      "detail": "OK final=https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8 segment=https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/stream01/20260831T090447/ts/149089/sequence_298178650.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -378,7 +378,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/8MRNFb9.png\" group-title=\"News\",DW Español",
       "url": "https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/master.m3u8",
       "ok": true,
-      "detail": "OK final=https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/master.m3u8 segment=https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/stream01/20260831T090754/ts/149087/sequence_298175975.ts",
+      "detail": "OK final=https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/master.m3u8 segment=https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/stream01/20260831T090754/ts/149089/sequence_298178650.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -386,7 +386,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EBS_1TV_Logo.svg/512px-EBS_1TV_Logo.svg.png\" group-title=\"Education\",EBS 1",
       "url": "https://ebsonair.ebs.co.kr/ebs1familypc/familypc1m/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://ebsonair.ebs.co.kr/ebs1familypc/familypc1m/playlist.m3u8 segment=https://ebsonair.ebs.co.kr/ebs1familypc/familypc1m/media_2694393.ts",
+      "detail": "OK final=https://ebsonair.ebs.co.kr/ebs1familypc/familypc1m/playlist.m3u8 segment=https://ebsonair.ebs.co.kr/ebs1familypc/familypc1m/media_2695998.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -394,7 +394,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/EBS_2TV_Logo.svg/512px-EBS_2TV_Logo.svg.png\" group-title=\"Education\",EBS 2",
       "url": "https://ebsonair.ebs.co.kr/ebs2familypc/familypc1m/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://ebsonair.ebs.co.kr/ebs2familypc/familypc1m/playlist.m3u8 segment=https://ebsonair.ebs.co.kr/ebs2familypc/familypc1m/media_2694393.ts",
+      "detail": "OK final=https://ebsonair.ebs.co.kr/ebs2familypc/familypc1m/playlist.m3u8 segment=https://ebsonair.ebs.co.kr/ebs2familypc/familypc1m/media_2695998.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -402,7 +402,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/5wLJzb0.png\" group-title=\"Education\",EBS E",
       "url": "https://ebsonair.ebs.co.kr/plus3familypc/familypc1m/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://ebsonair.ebs.co.kr/plus3familypc/familypc1m/playlist.m3u8 segment=https://ebsonair.ebs.co.kr/plus3familypc/familypc1m/media_2694393.ts",
+      "detail": "OK final=https://ebsonair.ebs.co.kr/plus3familypc/familypc1m/playlist.m3u8 segment=https://ebsonair.ebs.co.kr/plus3familypc/familypc1m/media_2695998.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -410,7 +410,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/aCeuhon.png\" group-title=\"Education\",EBS+ 1",
       "url": "https://ebsonair.ebs.co.kr/plus1familypc/familypc1m/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://ebsonair.ebs.co.kr/plus1familypc/familypc1m/playlist.m3u8 segment=https://ebsonair.ebs.co.kr/plus1familypc/familypc1m/media_2694393.ts",
+      "detail": "OK final=https://ebsonair.ebs.co.kr/plus1familypc/familypc1m/playlist.m3u8 segment=https://ebsonair.ebs.co.kr/plus1familypc/familypc1m/media_2695998.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -418,7 +418,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/pllIMGi.png\" group-title=\"Education\",EBS+ 2",
       "url": "https://ebsonair.ebs.co.kr/plus2familypc/familypc1m/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://ebsonair.ebs.co.kr/plus2familypc/familypc1m/playlist.m3u8 segment=https://ebsonair.ebs.co.kr/plus2familypc/familypc1m/media_2694393.ts",
+      "detail": "OK final=https://ebsonair.ebs.co.kr/plus2familypc/familypc1m/playlist.m3u8 segment=https://ebsonair.ebs.co.kr/plus2familypc/familypc1m/media_2695998.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -433,8 +433,8 @@
       "name": "Esport3",
       "extinf": "#EXTINF:-1 tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Esport3.svg/330px-Esport3.svg.png\" group-title=\"Sports\",Esport3",
       "url": "https://directes-tv-int.3catdirectes.cat/live-content/esport3-hls/master.m3u8",
-      "ok": false,
-      "detail": "segment HTTP 403",
+      "ok": true,
+      "detail": "OK final=https://directes-tv-int.3catdirectes.cat/live-content/esport3-hls/master.m3u8 segment=https://directes-tv-int.3catdirectes.cat/live-content/esport3-hls/br1/99393/nogeo-br1_298178953.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -442,7 +442,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/8t9mdg9.png\" group-title=\"News\",Euronews English",
       "url": "https://a-cdn.klowdtv.com/live3/euronews_720p/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://a-cdn.klowdtv.com/live3/euronews_720p/playlist.m3u8 segment=https://a-cdn.klowdtv.com/live3/euronews_720p/l_3202_1734959_340.ts",
+      "detail": "OK final=https://a-cdn.klowdtv.com/live3/euronews_720p/playlist.m3u8 segment=https://a-cdn.klowdtv.com/live3/euronews_720p/l_3262_17790959_1319.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -458,7 +458,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/FIFA%2B_(2025).svg/700px-FIFA%2B_(2025).svg.png\" group-title=\"Sports\",FIFA+ English",
       "url": "https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8 segment=https://a62dad94.wurl.com/ppc-sysdata_s_p_a_fifa_6-UTC-wfo-0-8581ba69/playlist_1200k_20260910T162645_334753.ts",
+      "detail": "OK final=https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8 segment=https://a62dad94.wurl.com/ppc-sysdata_s_p_a_fifa_6-UTC-wfo-0-8581ba69/playlist_1200k_20260910T205413_337446.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -466,7 +466,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/xy9ZxVO.png\" group-title=\"Sports\",FIFA+ Women",
       "url": "https://cffda8ff.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9GSUZBUGx1c3dvbWVuX0hMUw/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://cffda8ff.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9GSUZBUGx1c3dvbWVuX0hMUw/playlist.m3u8 segment=https://cffda8ff.wurl.com/ppc-sysdata_s_p_a_fifa_9-UTC-wfo-0-3a0e0d2b/playlist_1200k_20260910T162642_334742.ts",
+      "detail": "OK final=https://cffda8ff.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9GSUZBUGx1c3dvbWVuX0hMUw/playlist.m3u8 segment=https://cffda8ff.wurl.com/ppc-sysdata_s_p_a_fifa_9-UTC-wfo-0-3a0e0d2b/playlist_1200k_20260910T205416_337434.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -474,7 +474,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Fox_Weather_logo.svg/512px-Fox_Weather_logo.svg.png\" group-title=\"Weather\",Fox Weather",
       "url": "https://247wlive.foxweather.com/stream/index.m3u8",
       "ok": true,
-      "detail": "OK final=https://247wlive.foxweather.com/stream/index.m3u8 segment=https://247wlive.foxweather.com/stream/index_512x288_162620__8563662.ts",
+      "detail": "OK final=https://247wlive.foxweather.com/stream/index.m3u8 segment=https://247wlive.foxweather.com/stream/index_512x288_205348__8567728.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -482,7 +482,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/France_24_logo_%282013%29.svg/512px-France_24_logo_%282013%29.svg.png\" group-title=\"News\",France 24 Arabic",
       "url": "https://live.france24.com/hls/live/2037222-b/F24_AR_HI_HLS/master_5000.m3u8",
       "ok": true,
-      "detail": "OK final=https://live.france24.com/hls/live/2037222-b/F24_AR_HI_HLS/master_5000.m3u8 segment=https://live.france24.com/hls/live/2037222-b/F24_AR_HI_HLS/20260625T062734/master_5000/00333/master_5000_00351.ts",
+      "detail": "OK final=https://live.france24.com/hls/live/2037222-b/F24_AR_HI_HLS/master_5000.m3u8 segment=https://live.france24.com/hls/live/2037222-b/F24_AR_HI_HLS/20260625T062734/master_5000/00333/master_5000_01956.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -490,7 +490,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/France_24_logo_%282013%29.svg/512px-France_24_logo_%282013%29.svg.png\" group-title=\"News\",France 24 English",
       "url": "https://amg00106-france24-france24-samsunguk-qvpp8.amagi.tv/playlist/amg00106-france24-france24-samsunguk/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://amg00106-france24-france24-samsunguk-qvpp8.amagi.tv/playlist/amg00106-france24-france24-samsunguk/playlist.m3u8 segment=https://amg00106-france24-france24-samsunguk-qvpp8.amagi.tv/360p/seg_0940114.ts",
+      "detail": "OK final=https://amg00106-france24-france24-samsunguk-qvpp8.amagi.tv/playlist/amg00106-france24-france24-samsunguk/playlist.m3u8 segment=https://amg00106-france24-france24-samsunguk-qvpp8.amagi.tv/360p/seg_0942789.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -498,7 +498,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/France_24_logo_%282013%29.svg/512px-France_24_logo_%282013%29.svg.png\" group-title=\"News\",France 24 Español",
       "url": "https://live.france24.com/hls/live/2037220-b/F24_ES_HI_HLS/master_5000.m3u8",
       "ok": true,
-      "detail": "OK final=https://live.france24.com/hls/live/2037220-b/F24_ES_HI_HLS/master_5000.m3u8 segment=https://live.france24.com/hls/live/2037220-b/F24_ES_HI_HLS/20260625T062650/master_5000/00333/master_5000_00355.ts",
+      "detail": "OK final=https://live.france24.com/hls/live/2037220-b/F24_ES_HI_HLS/master_5000.m3u8 segment=https://live.france24.com/hls/live/2037220-b/F24_ES_HI_HLS/20260625T062650/master_5000/00333/master_5000_01960.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -506,7 +506,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/I8mviBy.png\" group-title=\"Sports\",FUEL TV",
       "url": "https://amg01074-fueltv-fueltvemeaen-rakuten-b6j62.amagi.tv/hls/amagi_hls_data_rakutenAA-fueltvemeaen/CDN/master.m3u8",
       "ok": true,
-      "detail": "OK final=https://amg01074-fueltv-fueltvemeaen-rakuten-b6j62.amagi.tv/ts-us-e2-n1/playlist/rakutenAA-fueltvemeaen/playlist.m3u8 segment=https://amg01074-fueltv-fueltvemeaen-rakuten-b6j62.amagi.tv/playlist360p_618873.ts",
+      "detail": "OK final=https://amg01074-fueltv-fueltvemeaen-rakuten-b6j62.amagi.tv/ts-us-e2-n1/playlist/rakutenAA-fueltvemeaen/playlist.m3u8 segment=https://amg01074-fueltv-fueltvemeaen-rakuten-b6j62.amagi.tv/playlist360p_621600.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -514,7 +514,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/ICI_RDI_logo.svg/512px-ICI_RDI_logo.svg.png\" group-title=\"News\",ICI RDI",
       "url": "https://rcavlive.akamaized.net/hls/live/704025/xcanrdi/master.m3u8",
       "ok": true,
-      "detail": "OK final=https://rcavlive.akamaized.net/hls/live/704025/xcanrdi/master.m3u8 segment=https://rcavlive.akamaized.net/hls/live/704025/xcanrdi/20260907T011610/master_2000/00020/master_2000_00623.ts",
+      "detail": "OK final=https://rcavlive.akamaized.net/hls/live/704025/xcanrdi/master.m3u8 segment=https://rcavlive.akamaized.net/hls/live/704025/xcanrdi/20260907T011610/master_2000/00021/master_2000_00844.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -546,7 +546,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/YtYhbJD.png\" group-title=\"Weather\",Meteonews",
       "url": "https://streaming.meteonews.net/hls/stream.m3u8",
       "ok": true,
-      "detail": "OK final=https://streaming.meteonews.net/hls/stream.m3u8 segment=https://streaming.meteonews.net/hls/1789057628421.ts",
+      "detail": "OK final=https://streaming.meteonews.net/hls/stream.m3u8 segment=https://streaming.meteonews.net/hls/1789073680799.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -578,7 +578,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://jiotvimages.cdn.jio.com/dare_images/images/NHK_World_Japan.png\" group-title=\"News\",NHK World-Japan",
       "url": "https://nhk.lls.pbs.org/index.m3u8",
       "ok": true,
-      "detail": "OK final=https://nhk.lls.pbs.org/index.m3u8 segment=https://nhk.lls.pbs.org/index_1080p_20260910T162539_5160298.ts",
+      "detail": "OK final=https://nhk.lls.pbs.org/index.m3u8 segment=https://nhk.lls.pbs.org/index_1080p_20260910T205307_5164306.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -586,7 +586,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/K0351vF.png\" group-title=\"Education\",Once México",
       "url": "https://vivo.canaloncelive.tv/securepkgr3/oncemexico/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://vivo.canaloncelive.tv/securepkgr3/oncemexico/playlist.m3u8 segment=https://vivo.canaloncelive.tv/securepkgr3/oncemexico/media-utc2kt3j4_91107.ts",
+      "detail": "OK final=https://vivo.canaloncelive.tv/securepkgr3/oncemexico/playlist.m3u8 segment=https://vivo.canaloncelive.tv/securepkgr3/oncemexico/media-utc2kt3j4_93783.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -594,7 +594,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/7s6JtcU.png\" group-title=\"Education\",OUN",
       "url": "https://live.knou.ac.kr/knou1/live1/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://live.knou.ac.kr/knou1/live1/playlist.m3u8 segment=https://live.knou.ac.kr/knou1/live1/segment_447264413.ts?solsessionid=d4a95f86e0186c39486284c1ab284614",
+      "detail": "OK final=https://live.knou.ac.kr/knou1/live1/playlist.m3u8 segment=https://live.knou.ac.kr/knou1/live1/segment_447268425.ts?solsessionid=16cd6079987f68eeb862f9d434496143",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -610,7 +610,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/q4cUQKW.png\" group-title=\"Education\",PBS Kids",
       "url": "https://livestream.pbskids.org/out/v1/14507d931bbe48a69287e4850e53443c/est.m3u8",
       "ok": true,
-      "detail": "OK final=https://livestream.pbskids.org/out/v1/14507d931bbe48a69287e4850e53443c/est.m3u8 segment=https://livestream.pbskids.org/out/v1/14507d931bbe48a69287e4850e53443c/est_2_23240696.ts?m=1650059836",
+      "detail": "OK final=https://livestream.pbskids.org/out/v1/14507d931bbe48a69287e4850e53443c/est.m3u8 segment=https://livestream.pbskids.org/out/v1/14507d931bbe48a69287e4850e53443c/est_2_23243381.ts?m=1650059836",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -618,7 +618,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/ambc9le.png\" group-title=\"Education\",PBS Kids Alaska",
       "url": "https://livestream.pbskids.org/out/v1/94b88ad58fc14f84a9382341f1c00b82/akst.m3u8",
       "ok": true,
-      "detail": "OK final=https://livestream.pbskids.org/out/v1/94b88ad58fc14f84a9382341f1c00b82/akst.m3u8 segment=https://livestream.pbskids.org/out/v1/94b88ad58fc14f84a9382341f1c00b82/akst_2_23238073.ts?m=1651680088",
+      "detail": "OK final=https://livestream.pbskids.org/out/v1/94b88ad58fc14f84a9382341f1c00b82/akst.m3u8 segment=https://livestream.pbskids.org/out/v1/94b88ad58fc14f84a9382341f1c00b82/akst_2_23240756.ts?m=1651680088",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -626,7 +626,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/ambc9le.png\" group-title=\"Education\",PBS Kids Hawaii",
       "url": "https://livestream.pbskids.org/out/v1/aa31792fee094b24b09045483f04d150/hast.m3u8",
       "ok": true,
-      "detail": "OK final=https://livestream.pbskids.org/out/v1/aa31792fee094b24b09045483f04d150/hast.m3u8 segment=https://livestream.pbskids.org/out/v1/aa31792fee094b24b09045483f04d150/hast_2_23236771.ts?m=1741573123",
+      "detail": "OK final=https://livestream.pbskids.org/out/v1/aa31792fee094b24b09045483f04d150/hast.m3u8 segment=https://livestream.pbskids.org/out/v1/aa31792fee094b24b09045483f04d150/hast_2_23239453.ts?m=1741573123",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -634,7 +634,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/ambc9le.png\" group-title=\"Education\",PBS Kids Mountain",
       "url": "https://livestream.pbskids.org/out/v1/3fe3030a2c8045a3932f4289d9eba3e6/mst.m3u8",
       "ok": true,
-      "detail": "OK final=https://livestream.pbskids.org/out/v1/3fe3030a2c8045a3932f4289d9eba3e6/mst.m3u8 segment=https://livestream.pbskids.org/out/v1/3fe3030a2c8045a3932f4289d9eba3e6/mst_2_23239208.ts?m=1651680092",
+      "detail": "OK final=https://livestream.pbskids.org/out/v1/3fe3030a2c8045a3932f4289d9eba3e6/mst.m3u8 segment=https://livestream.pbskids.org/out/v1/3fe3030a2c8045a3932f4289d9eba3e6/mst_2_23241893.ts?m=1651680092",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -642,7 +642,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/ambc9le.png\" group-title=\"Education\",PBS Kids Pacific",
       "url": "https://livestream.pbskids.org/out/v1/11f2e6b73eaa4887b3746cb863960e79/pst.m3u8",
       "ok": true,
-      "detail": "OK final=https://livestream.pbskids.org/out/v1/11f2e6b73eaa4887b3746cb863960e79/pst.m3u8 segment=https://livestream.pbskids.org/out/v1/11f2e6b73eaa4887b3746cb863960e79/pst_2_23238616.ts?m=1651680094",
+      "detail": "OK final=https://livestream.pbskids.org/out/v1/11f2e6b73eaa4887b3746cb863960e79/pst.m3u8 segment=https://livestream.pbskids.org/out/v1/11f2e6b73eaa4887b3746cb863960e79/pst_2_23241301.ts?m=1651680094",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -658,7 +658,7 @@
       "extinf": "#EXTINF:-1 tvg-name=\"Real Crime TV\" group-title=\"True Crime\",Real Crime TV",
       "url": "https://lds-realcrimebeta-rakuten.amagi.tv/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://lds-realcrimebeta-rakuten.amagi.tv/playlist.m3u8 segment=https://lds-realcrimebeta-rakuten.amagi.tv/240p-cc/seg_1345286.ts",
+      "detail": "OK final=https://lds-realcrimebeta-rakuten.amagi.tv/playlist.m3u8 segment=https://lds-realcrimebeta-rakuten.amagi.tv/240p-cc/seg_1347994.ts",
       "source": "curated"
     },
     {
@@ -666,7 +666,7 @@
       "extinf": "#EXTINF:-1 tvg-id=\"redbull_tv\" tvg-name=\"Red Bull TV\" tvg-logo=\"https://github.com/tv-logo/tv-logos/blob/main/countries/international/red-bull-tv-int.png?raw=true\" group-title=\"Sports\",Red Bull TV",
       "url": "https://e7c8f7d5.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWdiX1JlZEJ1bGxUVi0xX0hMUw/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://e7c8f7d5.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWdiX1JlZEJ1bGxUVi0xX0hMUw/playlist.m3u8 segment=https://e7c8f7d5.wurl.com/932/hls/master/playlist_1920x1080_162648__659148.ts",
+      "detail": "OK final=https://e7c8f7d5.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWdiX1JlZEJ1bGxUVi0xX0hMUw/playlist.m3u8 segment=https://e7c8f7d5.wurl.com/932/hls/master/playlist_1920x1080_205411__661849.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -690,7 +690,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.postimg.cc/5tj8kWSX/skynewsweather.png\" group-title=\"Weather\",Sky News Weather",
       "url": "https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8 segment=https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/media-u9sgk86nf_b4096000_15197.ts?source=a1-json",
+      "detail": "OK final=https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8 segment=https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/media-u9sgk86nf_b4096000_16801.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -698,7 +698,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/ulGKX30.png\" group-title=\"Sports\",SportsGrid",
       "url": "https://sportsgrid-tribal.amagi.tv/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://sportsgrid-tribal.amagi.tv/playlist.m3u8 segment=https://sportsgrid-tribal.amagi.tv/playlist404p_816522.ts",
+      "detail": "OK final=https://sportsgrid-tribal.amagi.tv/playlist.m3u8 segment=https://sportsgrid-tribal.amagi.tv/playlist404p_820582.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -706,7 +706,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Stadium_%28sports_network%29_logo.svg/512px-Stadium_%28sports_network%29_logo.svg.png\" group-title=\"Sports\",Stadium",
       "url": "https://aegis-cloudfront-1.tubi.video/74681dcc-e6d0-4add-ad67-a22ad9c152e6/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://aegis-cloudfront-1.tubi.video/74681dcc-e6d0-4add-ad67-a22ad9c152e6/playlist.m3u8 segment=https://aegis-cloudfront-1.tubi.video/74681dcc-e6d0-4add-ad67-a22ad9c152e6/playlist_1_8872864.ts?m=1736894346",
+      "detail": "OK final=https://aegis-cloudfront-1.tubi.video/74681dcc-e6d0-4add-ad67-a22ad9c152e6/playlist.m3u8 segment=https://aegis-cloudfront-1.tubi.video/74681dcc-e6d0-4add-ad67-a22ad9c152e6/playlist_1_8875571.ts?m=1736894346",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -714,7 +714,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/AsWLf8S.png\" group-title=\"Sports\",TDM Sports",
       "url": "https://live3.tdm.com.mo/ch4/sport_ch4.live/playlist.m3u8",
       "ok": false,
-      "detail": "HTTPSConnectionPool(host='live3.tdm.com.mo', port=443): Max retries exceeded with url: /ch4/sport_ch4.live/playlist.m3u8 (Caused by ConnectTimeoutError(<HTTPSConnection(host='live3.tdm.com.mo', port=443) at 0x7fc1982c8b30>, 'Connection to l",
+      "detail": "HTTPSConnectionPool(host='live3.tdm.com.mo', port=443): Max retries exceeded with url: /ch4/sport_ch4.live/playlist.m3u8 (Caused by ConnectTimeoutError(<HTTPSConnection(host='live3.tdm.com.mo', port=443) at 0x7f39887f6d50>, 'Connection to l",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -730,7 +730,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/3zHdkYG.png\" group-title=\"Sports\",TJK TV",
       "url": "https://tjktv-live.tjk.org/tjktv.m3u8",
       "ok": true,
-      "detail": "OK final=https://tjktv-live.tjk.org/tjktv.m3u8 segment=https://tjktv-live.tjk.org/tjktv_1080p-1789057670.ts",
+      "detail": "OK final=https://tjktv-live.tjk.org/tjktv.m3u8 segment=https://tjktv-live.tjk.org/tjktv_1080p-1789073720.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -746,7 +746,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/FabFP5A.png\" group-title=\"Sports\",Trace Sport Stars",
       "url": "https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8 segment=https://lightning-tracesport-samsungau.amagi.tv/playlist360p_2172962.ts",
+      "detail": "OK final=https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8 segment=https://lightning-tracesport-samsungau.amagi.tv/playlist360p_2175674.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -770,7 +770,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/TRT_World.svg/512px-TRT_World.svg.png\" group-title=\"News\",TRT World",
       "url": "https://dash2.antik.sk/live/test_trt_world_atktv/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://dash2.antik.sk/live/test_trt_world_atktv/playlist.m3u8 segment=https://dash2.antik.sk/live/test_trt_world_atktv/1789057618.ts",
+      "detail": "OK final=https://dash2.antik.sk/live/test_trt_world_atktv/playlist.m3u8 segment=https://dash2.antik.sk/live/test_trt_world_atktv/1789073664.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -786,7 +786,7 @@
       "extinf": "#EXTINF:-1 tvg-name=\"TV One Crime & Justice\" group-title=\"True Crime\",TV One Crime & Justice",
       "url": "https://linear-593.frequency.stream/dist/xumo/593/hls/master/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://linear-593.frequency.stream/dist/xumo/593/hls/master/playlist.m3u8 segment=https://linear-593.frequency.stream/dist/xumo/593/hls/master/playlist_1920x1080_162618__103880.ts",
+      "detail": "OK final=https://linear-593.frequency.stream/dist/xumo/593/hls/master/playlist.m3u8 segment=https://linear-593.frequency.stream/dist/xumo/593/hls/master/playlist_1920x1080_205352__106604.ts",
       "source": "curated"
     },
     {
@@ -794,7 +794,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/MQ6lJpS.png\" group-title=\"Education\",TVE RS",
       "url": "https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8 segment=https://streaming.procergs.com.br:8443/tve/stve/media_w1778927484_473446.ts",
+      "detail": "OK final=https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8 segment=https://streaming.procergs.com.br:8443/tve/stve/media_w27452163_477459.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -818,7 +818,7 @@
       "extinf": "#EXTINF:-1 tvg-name=\"Universal Crime\" group-title=\"True Crime\",Universal Crime",
       "url": "https://xumo-xumoent-vc-107-xmuvk.fast.nbcuni.com/live/master.m3u8",
       "ok": true,
-      "detail": "OK final=https://xumo-xumoent-vc-107-xmuvk.fast.nbcuni.com/live/master.m3u8 segment=https://xumo-xumoent-vc-107-xmuvk.fast.nbcuni.com/live/master_1/00778/master_1_02124.ts",
+      "detail": "OK final=https://xumo-xumoent-vc-107-xmuvk.fast.nbcuni.com/live/master.m3u8 segment=https://xumo-xumoent-vc-107-xmuvk.fast.nbcuni.com/live/master_1/00778/master_1_04833.ts",
       "source": "curated"
     },
     {
@@ -842,7 +842,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/TmqComb.png\" group-title=\"News\",VOA Persian",
       "url": "https://voa-ingest.akamaized.net/hls/live/2033876/tvmc07/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://voa-ingest.akamaized.net/hls/live/2033876/tvmc07/playlist.m3u8 segment=https://voa-ingest.akamaized.net/hls/live/2033876/tvmc07/20260827T094625/playlist_1080/01233/playlist_1080_00058.ts",
+      "detail": "OK final=https://voa-ingest.akamaized.net/hls/live/2033876/tvmc07/playlist.m3u8 segment=https://voa-ingest.akamaized.net/hls/live/2033876/tvmc07/20260827T094625/playlist_1080/01249/playlist_1080_00063.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -850,7 +850,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/rtRnlqN.png\" group-title=\"News\",VOA TV Africa",
       "url": "https://voa-ingest.akamaized.net/hls/live/2033874/tvmc06/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://voa-ingest.akamaized.net/hls/live/2033874/tvmc06/playlist.m3u8 segment=https://voa-ingest.akamaized.net/hls/live/2033874/tvmc06/20260827T093313/playlist_1080/01234/playlist_1080_00038.ts",
+      "detail": "OK final=https://voa-ingest.akamaized.net/hls/live/2033874/tvmc06/playlist.m3u8 segment=https://voa-ingest.akamaized.net/hls/live/2033874/tvmc06/20260827T093313/playlist_1080/01250/playlist_1080_00043.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -858,7 +858,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://www.yupptv.com/seo_img/UGC_GEC_big.jpg\" group-title=\"Education\",Vyas NIC",
       "url": "https://playhls.media.nic.in/hls/live/vyas/vyas.m3u8",
       "ok": true,
-      "detail": "OK final=https://playhls.media.nic.in/hls/live/vyas/vyas.m3u8 segment=https://playhls.media.nic.in/live/vyas/1789059097000.ts",
+      "detail": "OK final=https://playhls.media.nic.in/hls/live/vyas/vyas.m3u8 segment=https://playhls.media.nic.in/live/vyas/1789075435000.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -874,7 +874,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/3/36/World_Channel_2023.svg\" group-title=\"Education\",World Channel",
       "url": "https://world.lls.pbs.org/index.m3u8",
       "ok": true,
-      "detail": "OK final=https://world.lls.pbs.org/index.m3u8 segment=https://world.lls.pbs.org/index_1080p_20260910T162547_2266582.ts",
+      "detail": "OK final=https://world.lls.pbs.org/index.m3u8 segment=https://world.lls.pbs.org/index_1080p_20260910T205319_2270591.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     },
     {
@@ -882,7 +882,7 @@
       "extinf": "#EXTINF:-1 tvg-logo=\"https://i.imgur.com/lta5Mog.png\" group-title=\"Sports\",World of Freesports",
       "url": "https://mainstreammedia-worldoffreesportsintl-rakuten.amagi.tv/playlist.m3u8",
       "ok": true,
-      "detail": "OK final=https://mainstreammedia-worldoffreesportsintl-rakuten.amagi.tv/playlist.m3u8 segment=https://mainstreammedia-worldoffreesportsintl-rakuten.amagi.tv/240p-en/seg_1073547.ts",
+      "detail": "OK final=https://mainstreammedia-worldoffreesportsintl-rakuten.amagi.tv/playlist.m3u8 segment=https://mainstreammedia-worldoffreesportsintl-rakuten.amagi.tv/240p-en/seg_1076258.ts",
       "source": "https://raw.githubusercontent.com/freecasthub/public-iptv/main/playlist.m3u"
     }
   ]
