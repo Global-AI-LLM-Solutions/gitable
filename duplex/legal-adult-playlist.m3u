@@ -153,5 +153,3 @@ https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/
 https://247wlive.foxweather.com/stream/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/YtYhbJD.png" group-title="Weather",Meteonews
 https://streaming.meteonews.net/hls/stream.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/5tj8kWSX/skynewsweather.png" group-title="Weather",Sky News Weather
-https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8
