@@ -31,7 +31,9 @@
           "link": "https://www.hostinger.com/support/which-types-of-content-and-websites-are-allowed-at-hostinger/"
         }
       ],
-      "docs": "https://developers.cloudflare.com/workers/"
+      "docs": "https://developers.cloudflare.com/workers/",
+      "githubPagesAllowed": false,
+      "target": "Zero-cost provider specifically permitting commercial adult affiliate referrals, including outbound links, with written approval"
     },
     "affiliate": {
       "preferred": "XLoveCash",
@@ -68,7 +70,8 @@
       "asyncHumanReviewConfigured": false,
       "reviewerApproved": false,
       "enabled": false,
-      "site": "https://www.sightengine.com/faq/do-you-offer-a-free-trial"
+      "site": "https://www.sightengine.com/faq/do-you-offer-a-free-trial",
+      "scope": "Review affiliate landing-page text, outbound URLs, redirects and any approved promotional assets; do not crawl or display third-party videos"
     },
     "csamDetection": {
       "provider": "Hive/Thorn",
@@ -85,6 +88,16 @@
     "Media: copyright licence, consent, documented all-performer adulthood at filming, conservative human and technical review",
     "Moderation: functioning image/video and abuse reporting, appeal/takedown path, non-automated final approval",
     "Privacy: data processing consent and lawful storage rules; avoid exposing raw documents to external AI APIs",
-    "No paid usage, overage or external user data collection by default"
+    "No paid usage, overage or external user data collection by default",
+    "Explicit host permission for adult-oriented commercial affiliate linking, even with no explicit media hosted",
+    "Affiliate-issued tracking link and documented terms permitting the intended traffic sources and geographies"
+  ],
+  "businessModel": "Affiliate-link directory only: no video hosting, no player embeds, no copied thumbnails, no user uploads, no adult-content delivery",
+  "hostingExclusions": [
+    "GitHub Pages (permanent exclusion: commercial/adult-content restrictions)",
+    "Vercel (billing dispute)",
+    "IONOS (billing dispute)",
+    "Lovable (billing dispute)",
+    "Shopify (billing dispute)"
   ]
 }
