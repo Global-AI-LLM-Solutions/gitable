@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Publish After Dark (phone, Surge sign-in)",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "docs/after-dark/publish-phone.sh"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true,
+        "focus": false
+      },
+      "detail": "Safe non-explicit After Dark concept only. Opens Surge browser sign-in if required; no paid hosting or GoDaddy DNS changes."
+    }
+  ]
+}
