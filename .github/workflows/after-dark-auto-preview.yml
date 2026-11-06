@@ -1,0 +1,77 @@
+name: After Dark - hands-free preview readiness
+
+# Validation happens automatically after relevant changes, and a quiet daily
+# readiness check notices when secure Surge authorization is added later.
+# PREVIEW ONLY. Production release is intentionally not automated.
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/after-dark/index.html"
+      - "docs/after-dark/validate-preview.mjs"
+      - "docs/after-dark/deploy-ci.sh"
+      - "docs/after-dark/verify-live.mjs"
+      - "docs/after-dark/tests/**"
+      - ".github/workflows/after-dark-auto-preview.yml"
+  schedule:
+    - cron: "17 23 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: after-dark-automatic-preview
+  cancel-in-progress: true
+
+jobs:
+  automatic-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate approved non-explicit content
+        run: |
+          node docs/after-dark/validate-preview.mjs
+          node --test docs/after-dark/tests/*.test.mjs
+          bash -n docs/after-dark/deploy-ci.sh docs/after-dark/publish-phone.sh
+          node --check docs/after-dark/verify-live.mjs
+      - name: Require the specifically reviewed concept version
+        run: |
+          actual="$(git hash-object docs/after-dark/index.html)"
+          expected="1600a9832e978a8fea88d973af3bbf74499233f6"
+          if [ "$actual" != "$expected" ]; then
+            echo '::notice::Page was changed since approval; automatic preview is locked until safety review.'
+            exit 1
+          fi
+      - name: Check Surge authorization without displaying credentials
+        id: authorization
+        run: |
+          if [ -n "$SURGE_TOKEN" ]; then
+            echo "ready=yes" >> "$GITHUB_OUTPUT"
+            echo "Surge token found. Safe preview may proceed."
+          else
+            echo "ready=no" >> "$GITHUB_OUTPUT"
+            echo "::notice::Waiting for one-time secure Surge account authorization. No account creation, DNS edit, payment, or deployment attempted."
+          fi
+      - name: Publish and verify preview only
+        if: steps.authorization.outputs.ready == 'yes'
+        env:
+          TARGET: preview
+        run: |
+          bash docs/after-dark/deploy-ci.sh
+          echo "## After Dark: preview verified" >> "$GITHUB_STEP_SUMMARY"
+          echo "The approved non-explicit HTML is available at the revision URL in the publish log." >> "$GITHUB_STEP_SUMMARY"
+          echo "Production was NOT changed. No billing or DNS was changed." >> "$GITHUB_STEP_SUMMARY"
+      - name: Explain authorization blocker in run summary
+        if: steps.authorization.outputs.ready == 'no'
+        run: |
+          echo "## After Dark: source verified; publishing authorization pending" >> "$GITHUB_STEP_SUMMARY"
+          echo "This is expected. Complete the Surge browser sign-in securely through an authorized cloud-browser session. Never put passwords or tokens in issues or chat." >> "$GITHUB_STEP_SUMMARY"
+          echo "No payment, DNS change, or public deployment occurred." >> "$GITHUB_STEP_SUMMARY"
