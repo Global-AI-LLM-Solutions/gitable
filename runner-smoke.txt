@@ -1,0 +1,2 @@
+This harmless public file exists only to trigger the GitHub-hosted runner smoke workflow.
+No GAS source code, credentials, private configuration or customer data is included.
