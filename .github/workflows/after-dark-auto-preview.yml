@@ -62,7 +62,7 @@ jobs:
             checks.zero_extra_fees_confirmed,
             checks.no_cloudflare_infrastructure_confirmed,
             checks.non_explicit_prelaunch_concept_permitted
-          ].every(x=>x===true) && !!approval.approval_evidence_url;
+          ].every(x=>x===true) && typeof approval.approval_evidence_reference === 'string' && approval.approval_evidence_reference.length > 12;
           fs.appendFileSync(process.env.GITHUB_OUTPUT, 'approved='+(ready?'yes':'no')+'\n');
           console.log(ready ? 'Written provider evidence recorded; preview authorization permitted.' :
             'Provider terms or infrastructure confirmation pending; publication is disabled.');
