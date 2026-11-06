@@ -1,0 +1,55 @@
+{
+  "version": 2,
+  "project": "After Dark",
+  "status": "research-and-non-explicit-preview-only",
+  "default": "deny",
+  "media": {
+    "ingest": false,
+    "embed": false,
+    "hotlink": false,
+    "render": false,
+    "uploads": false
+  },
+  "monetisation": {
+    "enabled": false,
+    "advertising": false,
+    "affiliate": false,
+    "contractsValidated": false
+  },
+  "hosting": {
+    "github": "source-only/non-commercial prototype",
+    "cloudflare": "candidate only; provider terms and account availability unverified",
+    "noPaidServices": true
+  },
+  "jurisdiction": {
+    "unknown": "deny",
+    "verifiedAgeProvider": false,
+    "allInternationalJurisdictionsVerified": false
+  },
+  "requirements": [
+    "Documented explicit commercial licence from copyright holder for each use",
+    "Documented 18+ age and consent at production for every performer",
+    "Block depictions of minors and anyone appearing underage or age-ambiguous",
+    "Per-country legal compliance review and appropriate age assurance before content access",
+    "Approval and no disputed billing history for any hosting and advertising providers",
+    "No unrestricted third-party embedding or scraping",
+    "Accessible complaint/takedown and provenance systems"
+  ],
+  "providerCandidates": [
+    {
+      "name": "XVideos",
+      "status": "not approved",
+      "reason": "No verified licence for reuse or monetisation of catalog"
+    },
+    {
+      "name": "Independent rights-holding adult creators",
+      "status": "possible future partner",
+      "reason": "Direct signed licence required before any media is used"
+    },
+    {
+      "name": "Adult affiliate networks",
+      "status": "possible future partner",
+      "reason": "Check marketing claims, user data collection, hosting policies, advertising rules and jurisdiction restrictions"
+    }
+  ]
+}
