@@ -22,18 +22,7 @@ jobs:
         with:
           node-version: '22'
       - name: Fail closed on unapproved content
-        run: |
-          node <<'NODE'
-          const fs = require('node:fs');
-          const html = fs.readFileSync('docs/after-dark/index.html','utf8');
-          for (const key of ['No active affiliate links','Age Verification Not Yet Available','CONCEPT','disabled']) {
-            if (!html.toUpperCase().includes(key.toUpperCase())) throw new Error('Missing safety marker: ' + key);
-          }
-          for (const re of [/<(?:img|video|iframe|source|audio)\b/i, /<script\b[^>]*\bsrc\s*=/i, /\b(?:href|src|action)\s*=\s*["']\s*https?:\/\//i, /\bfetch\s*\(/i, /\bXMLHttpRequest\b/i]) {
-            if (re.test(html)) throw new Error('Unapproved media, link or remote fetch');
-          }
-          console.log('Only the safe non-explicit concept may be published');
-          NODE
+        run: node docs/after-dark/validate-preview.mjs
       - name: Verify Surge secret exists
         env:
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
