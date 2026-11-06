@@ -12,9 +12,7 @@
     "autoCharges": false,
     "allPerformerAgeProvenanceRequired": true,
     "appearanceAmbiguityBlocks": true,
-    "globalApproval": false,
-    "stripePayments": false,
-    "stripeCheckout": false
+    "globalApproval": false
   },
   "providers": {
     "hosting": {
@@ -38,15 +36,27 @@
       "target": "Zero-cost provider specifically permitting commercial adult affiliate referrals, including outbound links, with written approval"
     },
     "affiliate": {
-      "preferred": "XLoveCash",
-      "freeRegistrationClaimed": true,
+      "preferred": "CrakRevenue (existing account, inactive)",
+      "secondary": "XLoveCash",
       "accountApproved": false,
       "agreementExecuted": false,
       "issuedTrackingLink": false,
       "promotionRightsConfirmed": false,
       "enabled": false,
-      "site": "https://www.xlovecash.com/en/termsdetails",
-      "terms": "https://www.xlovecash.com/en/terms"
+      "candidates": [
+        {
+          "name": "CrakRevenue",
+          "website": "https://www.crakrevenue.com/",
+          "status": "Existing affiliate account deactivated for inactivity per 2026-01-26 Gmail; 2026-10-16 security notice requires review.",
+          "nextAction": "Request reactivation and confirm account security, eligibility, official thumbnail library and tracking URL rights, at zero cost."
+        },
+        {
+          "name": "XLoveCash",
+          "website": "https://www.xlovecash.com/",
+          "status": "Publisher account unverified",
+          "nextAction": "Determine signup/approval requirements, use of official creatives, payout terms, and permitted jurisdictions."
+        }
+      ]
     },
     "ageAssurance": {
       "preferred": "AgeVerif",
@@ -80,15 +90,6 @@
       "accessRequiresSales": true,
       "enabled": false,
       "site": "https://docs.thehive.ai/docs/submit-to-thorn-api"
-    },
-    "stripe": {
-      "accountConnectedForInspection": true,
-      "accountName": "Global AI Swarms",
-      "adultAffiliateBusinessApproved": false,
-      "checkoutEnabled": false,
-      "paymentLinksEnabled": false,
-      "reason": "Stripe Australia prohibited/restricted business policy lists pornography and other mature content; never process After Dark revenue or create checkout without written provider eligibility clearance.",
-      "policy": "https://stripe.com/au/legal/restricted-businesses"
     }
   },
   "requiredProofsBeforeActivation": [
@@ -103,12 +104,18 @@
     "Explicit host permission for adult-oriented commercial affiliate linking, even with no explicit media hosted",
     "Affiliate-issued tracking link and documented terms permitting the intended traffic sources and geographies"
   ],
-  "businessModel": "Approved thumbnail affiliate ads, advertiser-hosted media, commission paid directly by advertiser under approved agreement; no checkout or Stripe payment collection on After Dark.",
+  "businessModel": "Approved advertiser-supplied thumbnail advertisements which link directly to advertiser-hosted content. Revenue comes from affiliate network commissions paid to the publisher, with no site checkout or visitor payments.",
   "hostingExclusions": [
     "GitHub Pages (permanent exclusion: commercial/adult-content restrictions)",
     "Vercel (billing dispute)",
     "IONOS (billing dispute)",
     "Lovable (billing dispute)",
     "Shopify (billing dispute)"
-  ]
+  ],
+  "commissions": {
+    "model": "Direct payout from affiliate partners",
+    "paymentProcessorIntegrations": [],
+    "onSiteVisitorPayments": false,
+    "enabled": false
+  }
 }
