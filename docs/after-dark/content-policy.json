@@ -8,18 +8,33 @@
     "embed": false,
     "hotlink": false,
     "render": false,
-    "uploads": false
+    "uploads": false,
+    "approvedPromotionalThumbnailsOnly": true,
+    "thirdPartyThumbnailsEnabled": false,
+    "abstractPlaceholdersEnabled": true,
+    "requireExplicitCreativeLicence": true,
+    "performerAgeAndConsentEvidenceRequired": true,
+    "uncertainApparentAge": "block",
+    "affiliateDestinationMustBeApproved": true,
+    "redirectTrackingDisabled": true
   },
   "monetisation": {
     "enabled": false,
     "advertising": false,
     "affiliate": false,
-    "contractsValidated": false
+    "contractsValidated": false,
+    "paymentFromAdvertisersOnly": true,
+    "requiresVerifiedAffiliateContract": true,
+    "requiresAffiliateDisclosure": true,
+    "requiresApprovedTrackingUrl": true,
+    "commissionCollectionEnabled": false
   },
   "hosting": {
     "github": "source-only/non-commercial prototype",
     "cloudflare": "candidate only; provider terms and account availability unverified",
-    "noPaidServices": true
+    "noPaidServices": true,
+    "githubPages": "prohibited",
+    "adultAffiliateHosting": "not yet approved"
   },
   "jurisdiction": {
     "unknown": "deny",
@@ -33,7 +48,10 @@
     "Per-country legal compliance review and appropriate age assurance before content access",
     "Approval and no disputed billing history for any hosting and advertising providers",
     "No unrestricted third-party embedding or scraping",
-    "Accessible complaint/takedown and provenance systems"
+    "Accessible complaint/takedown and provenance systems",
+    "Advertiser-owned or commercially licensed thumbnails only, including explicit approval for embedding/hotlinking when applicable",
+    "Each thumbnail individually reviewed for rights, performer age verification, apparent-age ambiguity and jurisdiction",
+    "No outbound affiliate link until partner-issued URL, legal eligibility and host rules verified"
   ],
   "providerCandidates": [
     {
@@ -51,5 +69,6 @@
       "status": "possible future partner",
       "reason": "Check marketing claims, user data collection, hosting policies, advertising rules and jurisdiction restrictions"
     }
-  ]
+  ],
+  "businessModel": "Thumbnail-based affiliate advertising directory. Visitor clicks an approved thumbnail to visit advertiser-hosted destination; no video stored, played, embedded or proxied."
 }
