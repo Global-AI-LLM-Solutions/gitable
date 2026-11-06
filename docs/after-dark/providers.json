@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "lastReviewed": "2026-11-07",
+  "product": "After Dark",
+  "enforcement": {
+    "default": "deny",
+    "adultContent": false,
+    "affiliateLinks": false,
+    "publicMedia": false,
+    "countryOnUnknown": "deny",
+    "providerNetworkCalls": false,
+    "autoCharges": false,
+    "allPerformerAgeProvenanceRequired": true,
+    "appearanceAmbiguityBlocks": true,
+    "globalApproval": false
+  },
+  "providers": {
+    "hosting": {
+      "preferred": "Cloudflare Workers (conditional candidate)",
+      "verifiedCommercialAdultUse": false,
+      "freeTier": true,
+      "accountConnected": false,
+      "termsReviewedForThisUse": false,
+      "networkEnabled": false,
+      "alternatives": [
+        {
+          "name": "Hostinger",
+          "adultContentExplicitlyPermitted": true,
+          "zeroCost": false,
+          "approved": false,
+          "link": "https://www.hostinger.com/support/which-types-of-content-and-websites-are-allowed-at-hostinger/"
+        }
+      ],
+      "docs": "https://developers.cloudflare.com/workers/"
+    },
+    "affiliate": {
+      "preferred": "XLoveCash",
+      "freeRegistrationClaimed": true,
+      "accountApproved": false,
+      "agreementExecuted": false,
+      "issuedTrackingLink": false,
+      "promotionRightsConfirmed": false,
+      "enabled": false,
+      "site": "https://www.xlovecash.com/en/termsdetails",
+      "terms": "https://www.xlovecash.com/en/terms"
+    },
+    "ageAssurance": {
+      "preferred": "AgeVerif",
+      "freeMethodsAdvertised": [
+        "Yoti Digital ID",
+        "AgeVerif Account",
+        "AgeVerif Ticket"
+      ],
+      "accountApproved": false,
+      "webmasterSiteRegistered": false,
+      "serverProofVerifierConfigured": false,
+      "countryComplianceReviewed": false,
+      "enabled": false,
+      "site": "https://www.ageverif.com/",
+      "docs": "https://docs.ageverif.com/portable-verifications.html"
+    },
+    "moderation": {
+      "preferred": "Sightengine",
+      "freeImageTextTier": true,
+      "freeVideoModeration": false,
+      "accountConnected": false,
+      "mediaImportEnabled": false,
+      "asyncHumanReviewConfigured": false,
+      "reviewerApproved": false,
+      "enabled": false,
+      "site": "https://www.sightengine.com/faq/do-you-offer-a-free-trial"
+    },
+    "csamDetection": {
+      "provider": "Hive/Thorn",
+      "accessRequiresSales": true,
+      "enabled": false,
+      "site": "https://docs.thehive.ai/docs/submit-to-thorn-api"
+    }
+  },
+  "requiredProofsBeforeActivation": [
+    "Hosting: provider explicitly approves commercial adult-oriented affiliate/discovery operations on chosen free plan, including country gating",
+    "Affiliate: signed terms and actual affiliate tracking ID, no previous billing conflict",
+    "Age: website registered with provider and cryptographically verified server-side attestation, not client Javascript alone",
+    "Legal: jurisdiction-specific review; deny every country without current approval",
+    "Media: copyright licence, consent, documented all-performer adulthood at filming, conservative human and technical review",
+    "Moderation: functioning image/video and abuse reporting, appeal/takedown path, non-automated final approval",
+    "Privacy: data processing consent and lawful storage rules; avoid exposing raw documents to external AI APIs",
+    "No paid usage, overage or external user data collection by default"
+  ]
+}
