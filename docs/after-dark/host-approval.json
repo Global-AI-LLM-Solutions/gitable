@@ -1,0 +1,14 @@
+{
+  "provider": "Surge",
+  "requested_host": "afterdark.globalaiswarms.com",
+  "record_status": "awaiting written support reply",
+  "last_checked": "2026-11-07",
+  "checks": {
+    "zero_extra_fees_confirmed": false,
+    "no_cloudflare_infrastructure_confirmed": false,
+    "non_explicit_prelaunch_concept_permitted": false,
+    "commercial_adult_affiliate_use_permitted": false
+  },
+  "approval_evidence_url": "",
+  "notes": "Do not set any check true without actual written provider confirmation. Preview and live deployment remain disabled until the first three checks are verified. Commercial features require the fourth plus separate rights, location and age-assurance approvals."
+}
