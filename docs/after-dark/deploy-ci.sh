@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # After Dark - token only. Preview, verify, explicit cutover, verify again.
 set -euo pipefail
-ROOT="$(cd "$(dirname "\${BASH_SOURCE[0]}")/../.." && pwd)"
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 DOMAIN="afterdark.globalaiswarms.com"
 SITE="$ROOT/docs/after-dark/index.html"
 SURGE_VERSION="surge@0.56.0"
-TARGET="\${TARGET:-preview}"
+TARGET="${TARGET:-preview}"
 [[ "$TARGET" == preview || "$TARGET" == release ]] || { echo "BLOCKED: invalid target"; exit 1; }
-[[ -n "\${SURGE_TOKEN:-}" ]] || { echo "BLOCKED: Surge token missing. Nothing uploaded."; exit 1; }
+[[ -n "${SURGE_TOKEN:-}" ]] || { echo "BLOCKED: Surge token missing. Nothing uploaded."; exit 1; }
 node "$ROOT/docs/after-dark/validate-preview.mjs"
 node --test "$ROOT/docs/after-dark/tests/"*.test.mjs
 echo "Uploading verified preview. Production unchanged."
@@ -16,7 +16,7 @@ trap 'rm -f "$log"' EXIT
 npx --yes "$SURGE_VERSION" "$SITE" "$DOMAIN" --preview --force https | tee "$log"
 host="$(grep -Eo '[0-9]{10,}--afterdark--globalaiswarms--com\.surge\.sh' "$log" | tail -n 1 || true)"
 [[ -n "$host" ]] || { echo "BLOCKED: preview revision URL missing; production unchanged."; exit 1; }
-rev="\${host%%--*}"
+rev="${host%%--*}"
 preview="https://$host/"
 echo "Preview: $preview"
 ok=0
