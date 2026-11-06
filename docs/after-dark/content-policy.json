@@ -31,10 +31,13 @@
   },
   "hosting": {
     "github": "source-only/non-commercial prototype",
-    "cloudflare": "candidate only; provider terms and account availability unverified",
+    "cloudflare": "excluded (owner instruction)",
     "noPaidServices": true,
     "githubPages": "prohibited",
-    "adultAffiliateHosting": "not yet approved"
+    "adultAffiliateHosting": "not yet approved",
+    "current": "Surge static concept preview; login and live HTTPS not verified",
+    "surge": "permitted for non-explicit preview subject to free account authorization; commercial adult use not approved",
+    "render": "excluded due billing requirement"
   },
   "jurisdiction": {
     "unknown": "deny",

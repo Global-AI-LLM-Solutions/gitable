@@ -1,26 +1,19 @@
 #!/usr/bin/env bash
-# After Dark: phone-friendly publishing using GitHub Codespaces.
-# No payment, adult content, affiliate links or DNS changes.
+# iPhone Codespaces fallback; PREVIEW by default, never accepts unreviewed adult media.
 set -euo pipefail
-
-ROOT="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
-SITE="$ROOT/docs/after-dark/index.html"
-DOMAIN="afterdark.globalaiswarms.com"
-
-command -v node >/dev/null 2>&1 || { echo "Node.js is required in the cloud terminal."; exit 1; }
-command -v npm >/dev/null 2>&1 || { echo "npm is required in the cloud terminal."; exit 1; }
-test -f "$SITE" || { echo "Approved After Dark site not found."; exit 1; }
-
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 node "$ROOT/docs/after-dark/validate-preview.mjs"
-
-echo "Publishing non-explicit After Dark concept."
-echo "Official Surge browser sign-in may display a URL and confirmation code."
-echo "Never share login details, API tokens or recovery codes in ChatGPT."
-if [ -z "$(printenv SURGE_TOKEN 2>/dev/null || true)" ] && ! npx --yes surge@latest whoami >/dev/null 2>&1; then
-  npx --yes surge@latest login --browser
+node --test "$ROOT/docs/after-dark/tests/"*.test.mjs
+if [ -z "${SURGE_TOKEN:-}" ] && ! npx --yes surge@0.56.0 whoami >/dev/null 2>&1; then
+  echo "Secure Surge browser sign-in required. Never share passwords or tokens in ChatGPT or GitHub issues."
+  npx --yes surge@0.56.0 login --browser
 fi
-npx --yes surge@latest "$SITE" "$DOMAIN" --force https
-echo "Checking provider publishing state:"
-npx --yes surge@latest "$DOMAIN" status || true
-echo "After Surge confirms success, test https://$DOMAIN in your phone browser."
-echo "Stop your cloud Codespace to avoid ongoing compute charges."
+# Authentication is held by Surge CLI only. Delegates to shared release script.
+if [ -z "${SURGE_TOKEN:-}" ]; then
+  # The shared CI script expects a token; mobile uses its existing Surge CLI account session.
+  echo "Publishing a preview using the authenticated Surge CLI session."
+  npx --yes surge@0.56.0 "$ROOT/docs/after-dark/index.html" afterdark.globalaiswarms.com --preview --force https
+else
+  TARGET=preview bash "$ROOT/docs/after-dark/deploy-ci.sh"
+fi
+echo "The preview URL is shown above; production has NOT been changed."
