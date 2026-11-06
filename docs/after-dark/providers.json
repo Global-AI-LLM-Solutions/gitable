@@ -12,7 +12,9 @@
     "autoCharges": false,
     "allPerformerAgeProvenanceRequired": true,
     "appearanceAmbiguityBlocks": true,
-    "globalApproval": false
+    "globalApproval": false,
+    "stripePayments": false,
+    "stripeCheckout": false
   },
   "providers": {
     "hosting": {
@@ -78,6 +80,15 @@
       "accessRequiresSales": true,
       "enabled": false,
       "site": "https://docs.thehive.ai/docs/submit-to-thorn-api"
+    },
+    "stripe": {
+      "accountConnectedForInspection": true,
+      "accountName": "Global AI Swarms",
+      "adultAffiliateBusinessApproved": false,
+      "checkoutEnabled": false,
+      "paymentLinksEnabled": false,
+      "reason": "Stripe Australia prohibited/restricted business policy lists pornography and other mature content; never process After Dark revenue or create checkout without written provider eligibility clearance.",
+      "policy": "https://stripe.com/au/legal/restricted-businesses"
     }
   },
   "requiredProofsBeforeActivation": [
@@ -92,7 +103,7 @@
     "Explicit host permission for adult-oriented commercial affiliate linking, even with no explicit media hosted",
     "Affiliate-issued tracking link and documented terms permitting the intended traffic sources and geographies"
   ],
-  "businessModel": "Affiliate-link directory only: no video hosting, no player embeds, no copied thumbnails, no user uploads, no adult-content delivery",
+  "businessModel": "Approved thumbnail affiliate ads, advertiser-hosted media, commission paid directly by advertiser under approved agreement; no checkout or Stripe payment collection on After Dark.",
   "hostingExclusions": [
     "GitHub Pages (permanent exclusion: commercial/adult-content restrictions)",
     "Vercel (billing dispute)",
