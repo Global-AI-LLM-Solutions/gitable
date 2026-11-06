@@ -1,8 +1,9 @@
-name: After Dark - hands-free preview readiness
+name: After Dark - hands-free approved safe launch
 
 # Validation happens automatically after relevant changes, and a quiet daily
 # readiness check notices when secure Surge authorization is added later.
-# PREVIEW ONLY. Production release is intentionally not automated.
+# Only the previously approved immutable non-explicit page can reach production,
+# and only after written provider approval and secure Surge token authorization.
 on:
   push:
     branches:
@@ -14,6 +15,7 @@ on:
       - "docs/after-dark/verify-live.mjs"
       - "docs/after-dark/tests/**"
       - "docs/after-dark/host-approval.json"
+      - "docs/after-dark/needs-release.mjs"
       - ".github/workflows/after-dark-auto-preview.yml"
   schedule:
     - cron: "17 23 * * *"
@@ -78,22 +80,31 @@ jobs:
             echo "ready=no" >> "$GITHUB_OUTPUT"
             echo "::notice::Waiting for one-time secure Surge account authorization. No account creation, DNS edit, payment, or deployment attempted."
           fi
-      - name: Publish and verify preview only
+      - name: Determine whether approved production page needs updating
+        id: live
         if: steps.host.outputs.approved == 'yes' && steps.authorization.outputs.ready == 'yes'
+        run: node docs/after-dark/needs-release.mjs
+      - name: Publish verified preview then launch same revision
+        if: steps.host.outputs.approved == 'yes' && steps.authorization.outputs.ready == 'yes' && steps.live.outputs.deploy == 'yes'
         env:
-          TARGET: preview
+          TARGET: release
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
         run: |
           bash docs/after-dark/deploy-ci.sh
-          echo "## After Dark: preview verified" >> "$GITHUB_STEP_SUMMARY"
-          echo "The approved non-explicit HTML is available at the revision URL in the publish log." >> "$GITHUB_STEP_SUMMARY"
-          echo "Production was NOT changed. No billing or DNS was changed." >> "$GITHUB_STEP_SUMMARY"
+          echo "## After Dark: approved concept published and verified" >> "$GITHUB_STEP_SUMMARY"
+          echo "A verified Surge preview was promoted to the custom domain. The same approved HTML revision was checked over HTTPS." >> "$GITHUB_STEP_SUMMARY"
+          echo "No DNS or billing changes. No adult media, affiliate links or commercial features." >> "$GITHUB_STEP_SUMMARY"
       - name: Explain hosting policy blocker in run summary
         if: steps.host.outputs.approved != 'yes'
         run: |
           echo "## After Dark: source verified; awaiting written hosting approval" >> "$GITHUB_STEP_SUMMARY"
           echo "No preview or production publication. Surge support must confirm zero extra fees, no Cloudflare infrastructure, and permission for this pre-launch concept." >> "$GITHUB_STEP_SUMMARY"
           echo "This check never requires the founder to use the iPhone Terminal." >> "$GITHUB_STEP_SUMMARY"
+      - name: Record existing verified approved site
+        if: steps.host.outputs.approved == 'yes' && steps.authorization.outputs.ready == 'yes' && steps.live.outputs.deploy == 'no'
+        run: |
+          echo "## After Dark: approved site already matches" >> "$GITHUB_STEP_SUMMARY"
+          echo "No deployment or DNS action was needed. Live HTTPS content matches the approved safe source." >> "$GITHUB_STEP_SUMMARY"
       - name: Explain authorization blocker in run summary
         if: steps.host.outputs.approved == 'yes' && steps.authorization.outputs.ready == 'no'
         run: |
