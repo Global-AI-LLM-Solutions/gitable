@@ -16,22 +16,14 @@
   },
   "providers": {
     "hosting": {
-      "preferred": "Surge static hosting (preview only; pending account authorization)",
+      "preferred": "Surge (non-explicit preview only; account authorization pending)",
       "verifiedCommercialAdultUse": false,
       "freeTier": true,
       "accountConnected": false,
       "termsReviewedForThisUse": false,
       "networkEnabled": false,
-      "alternatives": [
-        {
-          "name": "Hostinger",
-          "adultContentExplicitlyPermitted": true,
-          "zeroCost": false,
-          "approved": false,
-          "link": "https://www.hostinger.com/support/which-types-of-content-and-websites-are-allowed-at-hostinger/"
-        }
-      ],
-      "docs": "https://surge.sh/docs/",
+      "alternatives": [],
+      "docs": "https://surge.sh/docs/cli/previews",
       "githubPagesAllowed": false,
       "target": "Non-explicit concept only until terms, billing and owner authorization are verified; adult-affiliate activation remains blocked."
     },
@@ -114,7 +106,9 @@
     "Cloudflare (owner exclusion)",
     "Render (account demanded payment method)",
     "Netlify (billing dispute)",
-    "GoDaddy Airo publishing (additional fee disallowed)"
+    "GoDaddy Airo publishing (additional fee disallowed)",
+    "Render (billing requirement)",
+    "GoDaddy Airo paid publisher (owner exclusion)"
   ],
   "commissions": {
     "model": "Direct payout from affiliate partners",
