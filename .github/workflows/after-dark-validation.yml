@@ -1,0 +1,33 @@
+name: After Dark - free source validation
+on:
+  pull_request:
+    paths:
+      - "docs/after-dark/**"
+      - ".github/workflows/after-dark-*.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate release safety
+        run: node docs/after-dark/validate-preview.mjs
+      - name: Run regression tests
+        run: node --test docs/after-dark/tests/*.test.mjs
+      - name: Check Bash script syntax
+        run: bash -n docs/after-dark/deploy-ci.sh docs/after-dark/publish-phone.sh
+      - name: Check JavaScript syntax
+        run: |
+          node --check docs/after-dark/verify-live.mjs
+          node --check docs/after-dark/validate-preview.mjs
+          node --check docs/after-dark/access-policy.mjs
+      - name: Ensure alternative paid-provider deployment disabled
+        run: |
+          test ! -e docs/after-dark/render.yaml
+          test -f docs/after-dark/index.html
