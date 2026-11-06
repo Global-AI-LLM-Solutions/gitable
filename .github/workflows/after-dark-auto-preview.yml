@@ -13,6 +13,7 @@ on:
       - "docs/after-dark/deploy-ci.sh"
       - "docs/after-dark/verify-live.mjs"
       - "docs/after-dark/tests/**"
+      - "docs/after-dark/host-approval.json"
       - ".github/workflows/after-dark-auto-preview.yml"
   schedule:
     - cron: "17 23 * * *"
@@ -29,8 +30,6 @@ jobs:
   automatic-preview:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    env:
-      SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -50,8 +49,27 @@ jobs:
             echo '::notice::Page was changed since approval; automatic preview is locked until safety review.'
             exit 1
           fi
+      - name: Verify written Surge hosting approval
+        id: host
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const approval = JSON.parse(fs.readFileSync('docs/after-dark/host-approval.json','utf8'));
+          const checks = approval.checks || {};
+          const ready = [
+            checks.zero_extra_fees_confirmed,
+            checks.no_cloudflare_infrastructure_confirmed,
+            checks.non_explicit_prelaunch_concept_permitted
+          ].every(x=>x===true) && !!approval.approval_evidence_url;
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, 'approved='+(ready?'yes':'no')+'\n');
+          console.log(ready ? 'Written provider evidence recorded; preview authorization permitted.' :
+            'Provider terms or infrastructure confirmation pending; publication is disabled.');
+          NODE
       - name: Check Surge authorization without displaying credentials
         id: authorization
+        if: steps.host.outputs.approved == 'yes'
+        env:
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
         run: |
           if [ -n "$SURGE_TOKEN" ]; then
             echo "ready=yes" >> "$GITHUB_OUTPUT"
@@ -61,16 +79,23 @@ jobs:
             echo "::notice::Waiting for one-time secure Surge account authorization. No account creation, DNS edit, payment, or deployment attempted."
           fi
       - name: Publish and verify preview only
-        if: steps.authorization.outputs.ready == 'yes'
+        if: steps.host.outputs.approved == 'yes' && steps.authorization.outputs.ready == 'yes'
         env:
           TARGET: preview
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
         run: |
           bash docs/after-dark/deploy-ci.sh
           echo "## After Dark: preview verified" >> "$GITHUB_STEP_SUMMARY"
           echo "The approved non-explicit HTML is available at the revision URL in the publish log." >> "$GITHUB_STEP_SUMMARY"
           echo "Production was NOT changed. No billing or DNS was changed." >> "$GITHUB_STEP_SUMMARY"
+      - name: Explain hosting policy blocker in run summary
+        if: steps.host.outputs.approved != 'yes'
+        run: |
+          echo "## After Dark: source verified; awaiting written hosting approval" >> "$GITHUB_STEP_SUMMARY"
+          echo "No preview or production publication. Surge support must confirm zero extra fees, no Cloudflare infrastructure, and permission for this pre-launch concept." >> "$GITHUB_STEP_SUMMARY"
+          echo "This check never requires the founder to use the iPhone Terminal." >> "$GITHUB_STEP_SUMMARY"
       - name: Explain authorization blocker in run summary
-        if: steps.authorization.outputs.ready == 'no'
+        if: steps.host.outputs.approved == 'yes' && steps.authorization.outputs.ready == 'no'
         run: |
           echo "## After Dark: source verified; publishing authorization pending" >> "$GITHUB_STEP_SUMMARY"
           echo "This is expected. Complete the Surge browser sign-in securely through an authorized cloud-browser session. Never put passwords or tokens in issues or chat." >> "$GITHUB_STEP_SUMMARY"
