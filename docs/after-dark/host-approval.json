@@ -9,6 +9,6 @@
     "non_explicit_prelaunch_concept_permitted": false,
     "commercial_adult_affiliate_use_permitted": false
   },
-  "approval_evidence_url": "",
-  "notes": "Do not set any check true without actual written provider confirmation. Preview and live deployment remain disabled until the first three checks are verified. Commercial features require the fourth plus separate rights, location and age-assurance approvals."
+  "notes": "Keep all checks false until the exact written support reply is verified. Reference the message date and sender in approval_evidence_reference without copying private correspondence to this public repo. The first three checks allow only the reviewed non-explicit preview; commercial adult-affiliate use remains prohibited unless separately approved.",
+  "approval_evidence_reference": ""
 }
