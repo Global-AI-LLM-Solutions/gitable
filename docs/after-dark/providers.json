@@ -16,7 +16,7 @@
   },
   "providers": {
     "hosting": {
-      "preferred": "Cloudflare Workers (conditional candidate)",
+      "preferred": "Surge static hosting (preview only; pending account authorization)",
       "verifiedCommercialAdultUse": false,
       "freeTier": true,
       "accountConnected": false,
@@ -31,9 +31,9 @@
           "link": "https://www.hostinger.com/support/which-types-of-content-and-websites-are-allowed-at-hostinger/"
         }
       ],
-      "docs": "https://developers.cloudflare.com/workers/",
+      "docs": "https://surge.sh/docs/",
       "githubPagesAllowed": false,
-      "target": "Zero-cost provider specifically permitting commercial adult affiliate referrals, including outbound links, with written approval"
+      "target": "Non-explicit concept only until terms, billing and owner authorization are verified; adult-affiliate activation remains blocked."
     },
     "affiliate": {
       "preferred": "CrakRevenue (existing account, inactive)",
@@ -110,7 +110,11 @@
     "Vercel (billing dispute)",
     "IONOS (billing dispute)",
     "Lovable (billing dispute)",
-    "Shopify (billing dispute)"
+    "Shopify (billing dispute)",
+    "Cloudflare (owner exclusion)",
+    "Render (account demanded payment method)",
+    "Netlify (billing dispute)",
+    "GoDaddy Airo publishing (additional fee disallowed)"
   ],
   "commissions": {
     "model": "Direct payout from affiliate partners",
