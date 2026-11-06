@@ -1,0 +1,52 @@
+name: After Dark - manual Surge publish (non-explicit only)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: after-dark-manual-publish
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fail closed on unapproved content
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const html = fs.readFileSync('docs/after-dark/index.html','utf8');
+          for (const key of ['No active affiliate links','Age Verification Not Yet Available','CONCEPT','disabled']) {
+            if (!html.toUpperCase().includes(key.toUpperCase())) throw new Error('Missing safety marker: ' + key);
+          }
+          for (const re of [/<(?:img|video|iframe|source|audio)\b/i, /<script\b[^>]*\bsrc\s*=/i, /\b(?:href|src|action)\s*=\s*["']\s*https?:\/\//i, /\bfetch\s*\(/i, /\bXMLHttpRequest\b/i]) {
+            if (re.test(html)) throw new Error('Unapproved media, link or remote fetch');
+          }
+          console.log('Only the safe non-explicit concept may be published');
+          NODE
+      - name: Verify Surge secret exists
+        env:
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+        run: |
+          if [ -z "$SURGE_TOKEN" ]; then
+            echo '::error::SURGE_TOKEN missing. Sign into Surge through its browser flow, mint a domain-scoped token, and store it only in GitHub Actions secrets.'
+            exit 1
+          fi
+      - name: Publish a single HTML file only
+        env:
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+        run: npx --yes surge@latest docs/after-dark/index.html afterdark.globalaiswarms.com --force https
+      - name: Confirm status
+        env:
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+        run: npx --yes surge@latest afterdark.globalaiswarms.com status
