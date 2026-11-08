@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "project": "After Dark",
   "status": "research-and-non-explicit-preview-only",
   "default": "deny",
@@ -16,7 +16,15 @@
     "performerAgeAndConsentEvidenceRequired": true,
     "uncertainApparentAge": "block",
     "affiliateDestinationMustBeApproved": true,
-    "redirectTrackingDisabled": true
+    "redirectTrackingDisabled": true,
+    "prohibitedCategories": {
+      "default": "deny",
+      "englandAndWalesEffectiveDate": "2026-11-06",
+      "strangulationOrSuffocation": "deny",
+      "prohibitedFamilialSexualActivity": "deny",
+      "sexualActivityWithOrRoleplayingPersonUnder16": "deny",
+      "requiresVerifiedCategoryReview": true
+    }
   },
   "monetisation": {
     "enabled": false,
