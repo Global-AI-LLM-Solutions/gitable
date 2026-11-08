@@ -27,6 +27,15 @@ export function decideMediaAccess(request, release = RELEASE) {
   if (release.worldLegalCoverageApproved !== true) return deny("jurisdiction-not-approved");
   if (!validEvidence(request.ageAssertion) || request.ageAssertion.over18 !== true || request.ageAssertion.country !== request.country) return deny("age-not-verified");
   if (!request.media || request.media.licensed !== true || request.media.allPerformersVerifiedAdultsAtProduction !== true || request.media.consentVerified !== true || request.media.humanModerated !== true || request.media.appearsUnderageOrAgeUncertain !== false || request.media.revoked !== false) return deny("media-not-cleared");
+  // England and Wales criminalised possession/publication of specified realistic
+  // pornographic depictions from 6 November 2026. Until a verified classifier
+  // and qualified legal review exist, these categories are denied everywhere.
+  if (request.media.prohibitedCategoryReviewVerified !== true ||
+      request.media.depictsStrangulationOrSuffocation !== false ||
+      request.media.depictsProhibitedFamilialSexualActivity !== false ||
+      request.media.depictsSexualActivityWithOrRoleplayingUnder16 !== false) {
+    return deny("media-prohibited-or-unreviewed-category");
+  }
   if (request.jurisdictionReview?.country !== request.country || request.jurisdictionReview?.approved !== true || !validEvidence(request.jurisdictionReview)) return deny("jurisdiction-not-cleared");
   return {allow:true,reason:"cleared-by-explicit-release-proofs"};
 }
