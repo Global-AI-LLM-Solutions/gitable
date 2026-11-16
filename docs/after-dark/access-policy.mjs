@@ -18,6 +18,16 @@ const validEvidence = (e) => !!e && typeof e === "object" &&
   e.expiresAt instanceof Date &&
   Number.isFinite(e.expiresAt.getTime()) &&
   e.expiresAt.getTime() > Date.now();
+const validUkHeaaReview = (e) => validEvidence(e) &&
+  e.country === "GB" &&
+  e.approved === true &&
+  e.vendorDueDiligenceVerified === true &&
+  e.performanceMetricsVerified === true &&
+  e.challengeAgeAndLivenessReviewCompleted === true &&
+  e.repeatChecksReviewCompleted === true &&
+  e.antiCircumventionReviewCompleted === true &&
+  e.appealsProcessVerified === true &&
+  e.privacyAndDeletionNoticeVerified === true;
 export function decideMediaAccess(request, release = RELEASE) {
   const deny = reason => ({allow:false, reason});
   if (!request || !isoCountry(request.country)) return deny("country-unverified");
@@ -26,6 +36,11 @@ export function decideMediaAccess(request, release = RELEASE) {
   if (release.rightsWorkflowApproved !== true || release.moderationWorkflowApproved !== true) return deny("workflow-not-approved");
   if (release.worldLegalCoverageApproved !== true) return deny("jurisdiction-not-approved");
   if (!validEvidence(request.ageAssertion) || request.ageAssertion.over18 !== true || request.ageAssertion.country !== request.country) return deny("age-not-verified");
+  // Ofcom's HEAA guidance update of 16 November 2026 emphasises ongoing
+  // effectiveness, provider due diligence, anti-circumvention, appeal and
+  // privacy controls. A future GB release must carry current server evidence
+  // for every control; no browser-supplied assertion can satisfy this gate.
+  if (request.country === "GB" && !validUkHeaaReview(request.ukHeaaReview)) return deny("uk-heaa-review-incomplete");
   if (!request.media || request.media.licensed !== true || request.media.allPerformersVerifiedAdultsAtProduction !== true || request.media.consentVerified !== true || request.media.humanModerated !== true || request.media.appearsUnderageOrAgeUncertain !== false || request.media.revoked !== false) return deny("media-not-cleared");
   // England and Wales criminalised possession/publication of specified realistic
   // pornographic depictions from 6 November 2026. Until a verified classifier
