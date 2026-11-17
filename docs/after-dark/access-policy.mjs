@@ -27,7 +27,13 @@ const validUkHeaaReview = (e) => validEvidence(e) &&
   e.repeatChecksReviewCompleted === true &&
   e.antiCircumventionReviewCompleted === true &&
   e.appealsProcessVerified === true &&
-  e.privacyAndDeletionNoticeVerified === true;
+  e.privacyAndDeletionNoticeVerified === true &&
+  e.csamRiskAssessmentVerified === true &&
+  e.knownCsamHashMatchingControlVerified === true &&
+  e.uploaderBanAndEnforcementControlVerified === true &&
+  e.automatedDetectionApplicabilityReviewed === true &&
+  e.recommendationSafetyControlVerified === true &&
+  e.early2027CommencementRechecked === true;
 export function decideMediaAccess(request, release = RELEASE) {
   const deny = reason => ({allow:false, reason});
   if (!request || !isoCountry(request.country)) return deny("country-unverified");
@@ -38,8 +44,11 @@ export function decideMediaAccess(request, release = RELEASE) {
   if (!validEvidence(request.ageAssertion) || request.ageAssertion.over18 !== true || request.ageAssertion.country !== request.country) return deny("age-not-verified");
   // Ofcom's HEAA guidance update of 16 November 2026 emphasises ongoing
   // effectiveness, provider due diligence, anti-circumvention, appeal and
-  // privacy controls. A future GB release must carry current server evidence
-  // for every control; no browser-supplied assertion can satisfy this gate.
+  // privacy controls. Ofcom's 16 November illegal-content rules also extend
+  // known-CSAM detection duties to more services, including pornography sites,
+  // subject to parliamentary commencement expected from early 2027. A future
+  // GB release must carry current server evidence for every control and scope
+  // decision; no browser-supplied assertion can satisfy this gate.
   if (request.country === "GB" && !validUkHeaaReview(request.ukHeaaReview)) return deny("uk-heaa-review-incomplete");
   if (!request.media || request.media.licensed !== true || request.media.allPerformersVerifiedAdultsAtProduction !== true || request.media.consentVerified !== true || request.media.humanModerated !== true || request.media.appearsUnderageOrAgeUncertain !== false || request.media.revoked !== false) return deny("media-not-cleared");
   // England and Wales criminalised possession/publication of specified realistic
