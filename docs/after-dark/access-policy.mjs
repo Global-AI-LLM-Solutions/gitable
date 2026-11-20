@@ -34,6 +34,13 @@ const validUkHeaaReview = (e) => validEvidence(e) &&
   e.automatedDetectionApplicabilityReviewed === true &&
   e.recommendationSafetyControlVerified === true &&
   e.early2027CommencementRechecked === true;
+const validAuCodeReview = (e) => validEvidence(e) &&
+  e.country === "AU" &&
+  e.approved === true &&
+  e.serviceClassificationReviewed === true &&
+  e.headTermsRiskProfileDocumented === true &&
+  e.class1cAndClass2RiskAssessmentCompleted === true &&
+  e.regulatorInformationResponseProcessVerified === true;
 export function decideMediaAccess(request, release = RELEASE) {
   const deny = reason => ({allow:false, reason});
   if (!request || !isoCountry(request.country)) return deny("country-unverified");
@@ -42,6 +49,11 @@ export function decideMediaAccess(request, release = RELEASE) {
   if (release.rightsWorkflowApproved !== true || release.moderationWorkflowApproved !== true) return deny("workflow-not-approved");
   if (release.worldLegalCoverageApproved !== true) return deny("jurisdiction-not-approved");
   if (!validEvidence(request.ageAssertion) || request.ageAssertion.over18 !== true || request.ageAssertion.country !== request.country) return deny("age-not-verified");
+  // eSafety's published direction dated 6 November 2026 enforced existing
+  // risk-profile and risk-assessment duties for a relevant electronic service.
+  // Any future AU release must carry current server evidence of classification,
+  // documented risk reasoning, completed assessment and regulator response.
+  if (request.country === "AU" && !validAuCodeReview(request.auCodeReview)) return deny("au-code-review-incomplete");
   // Ofcom's HEAA guidance update of 16 November 2026 emphasises ongoing
   // effectiveness, provider due diligence, anti-circumvention, appeal and
   // privacy controls. Ofcom's 16 November illegal-content rules also extend
